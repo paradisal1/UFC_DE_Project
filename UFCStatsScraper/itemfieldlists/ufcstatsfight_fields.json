@@ -1,0 +1,70 @@
+{
+    "eventxpaths": {
+        "eventname": "normalize-space(//span[@class='b-content__title-highlight']/text())",
+        "eventdate": "normalize-space(//li[@class='b-list__box-list-item'][i][1]/text()[2])",
+        "eventlocation": "normalize-space(//li[@class='b-list__box-list-item'][i][2]/text()[2])"
+    },
+    "fightxpaths": {
+        "weightclass": "normalize-space(//*[@class='b-fight-details__fight-title']/text()[last()])",
+        "method": "normalize-space(//*[@class='b-fight-details__text'][1]/i[1]/i[2]/text())",
+        "round": "normalize-space(//*[@class='b-fight-details__text'][1]/i[2]/text()[2])",
+        "time": "normalize-space(//*[@class='b-fight-details__text'][1]/i[3]/text()[2])",
+        "timeformat": "normalize-space(//*[@class='b-fight-details__text'][1]/i[4]/text()[2])",
+        "referee": "normalize-space(//*[@class='b-fight-details__text'][1]/i[5]/span/text())",
+        "fighter1": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//p[1]/a/text())",
+        "fighter1nickname": "normalize-space(//*[@class='b-fight-details']//*[@class='b-fight-details__person'][1]//p/text())",
+        "fighter2": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//p[2]/a/text())",
+        "fighter2nickname": "normalize-space(//*[@class='b-fight-details']//*[@class='b-fight-details__person'][2]//p/text())",
+        "fighter1kd": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[2]/p[1]/text())",
+        "fighter2kd": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[2]/p[2]/text())",
+        "fighter1sigstr": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[3]/p[1]/text())",
+        "fighter2sigstr": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[3]/p[2]/text())",
+        "fighter1sigstrpct": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[4]/p[1]/text())",
+        "fighter2sigstrpct": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[4]/p[2]/text())",
+        "fighter1totalstr": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[5]/p[1]/text())",
+        "fighter2totalstr": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[5]/p[2]/text())",
+        "fighter1td": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[6]/p[1]/text())",
+        "fighter2td": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[6]/p[2]/text())",
+        "fighter1tdpct": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[7]/p[1]/text())",
+        "fighter2tdpct": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[7]/p[2]/text())",
+        "fighter1subatt": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[8]/p[1]/text())",
+        "fighter2subatt": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[8]/p[2]/text())",
+        "fighter1rev": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[9]/p[1]/text())",
+        "fighter2rev": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[9]/p[2]/text())",
+        "fighter1ctrl": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[10]/p[1]/text())",
+        "fighter2ctrl": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][2]//tbody//td[10]/p[2]/text())",
+        "fighter1head": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][4]/following-sibling::table/tbody//td[4]/p[1]/text())",
+        "fighter2head": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][4]/following-sibling::table/tbody//td[4]/p[2]/text())",
+        "fighter1body": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][4]/following-sibling::table/tbody//td[5]/p[1]/text())",
+        "fighter2body": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][4]/following-sibling::table/tbody//td[5]/p[2]/text())",
+        "fighter1leg": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][4]/following-sibling::table/tbody//td[6]/p[1]/text())",
+        "fighter2leg": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][4]/following-sibling::table/tbody//td[6]/p[2]/text())",
+        "fighter1distance": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][4]/following-sibling::table/tbody//td[7]/p[1]/text())",
+        "fighter2distance": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][4]/following-sibling::table/tbody//td[7]/p[2]/text())",
+        "fighter1clinch": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][4]/following-sibling::table/tbody//td[8]/p[1]/text())",
+        "fighter2clinch": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][4]/following-sibling::table/tbody//td[8]/p[2]/text())",
+        "fighter1ground": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][4]/following-sibling::table/tbody//td[9]/p[1]/text())",
+        "fighter2ground": "normalize-space(*//section[@class='b-fight-details__section js-fight-section'][4]/following-sibling::table/tbody//td[9]/p[2]/text())"
+    },
+    "fighteridxpaths": {
+        "fighter1id": "//*[@class='b-fight-details']//*[@class='b-fight-details__person'][1]//a/@href",
+        "fighter2id": "//*[@class='b-fight-details']//*[@class='b-fight-details__person'][2]//a/@href"
+    },
+    "winnerxpath": {
+        "winningfighter": "*//i[@class='b-fight-details__person-status b-fight-details__person-status_style_green']/following-sibling::div//a/@href"
+    },
+    "bonusesxpaths": {
+        "perf": "*//img[contains(@src, 'perf')][@src]",
+        "sub": "*//img[contains(@src, 'sub')][@src]",
+        "fight": "*//img[contains(@src, 'fight')][@src]",
+        "ko": "*//img[contains(@src, 'ko')][@src]"
+    },
+    "judgexpaths": {
+        "Judge1": "normalize-space(//*[@class='b-fight-details__fight']//p[2]/i[2]/span/text())",
+        "Judge1_Score": "normalize-space(//*[@class='b-fight-details__fight']//p[2]/i[2]/text()[2])",
+        "Judge2": "normalize-space(//*[@class='b-fight-details__fight']//p[2]/i[3]/span/text())",
+        "Judge2_Score": "normalize-space(//*[@class='b-fight-details__fight']//p[2]/i[3]/text()[2])",
+        "Judge3": "normalize-space(//*[@class='b-fight-details__fight']//p[2]/i[4]/span/text())",
+        "Judge3_Score": "normalize-space(//*[@class='b-fight-details__fight']//p[2]/i[4]/text()[2])"
+    }
+}

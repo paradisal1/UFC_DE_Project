@@ -1,0 +1,19 @@
+{
+    "fighterxpaths" : {
+        "fighterurl": "",
+        "fightername": "normalize-space(//h2/span/text())",
+        "height": "normalize-space(//ul[@class='b-list__box-list']/li[1]/text()[2])",
+        "weight": "normalize-space(//ul[@class='b-list__box-list']/li[2]/text()[2])",
+        "reach": "normalize-space(//ul[@class='b-list__box-list']/li[3]/text()[2])",
+        "stance": "normalize-space(//ul[@class='b-list__box-list']/li[4]/text()[2])",
+        "dob": "normalize-space(//ul[@class='b-list__box-list']/li[5]/text()[2])",
+        "slpm": "normalize-space(//div[@class='b-list__info-box-left']/ul/li[1]/text()[2])",
+        "stracc": "normalize-space(//div[@class='b-list__info-box-left']/ul/li[2]/text()[2])",
+        "sapm": "normalize-space(//div[@class='b-list__info-box-left']/ul/li[3]/text()[2])",
+        "strdef": "normalize-space(//div[@class='b-list__info-box-left']/ul/li[4]/text()[2])",
+        "tdavg": "normalize-space(//div[@class='b-list__info-box-left']/following-sibling::div//li[2]/text()[2])",
+        "tdacc": "normalize-space(//div[@class='b-list__info-box-left']/following-sibling::div//li[3]/text()[2])",
+        "tddef": "normalize-space(//div[@class='b-list__info-box-left']/following-sibling::div//li[4]/text()[2])",
+        "subavg": "normalize-space(//div[@class='b-list__info-box-left']/following-sibling::div//li[5]/text()[2])"
+    }
+}
