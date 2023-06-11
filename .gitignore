@@ -1,6 +1,6 @@
 /.venv
 /.scrapy
-./*.db
+*/*.db
 */__pycache__
 profiles.yml
 .gitignore
