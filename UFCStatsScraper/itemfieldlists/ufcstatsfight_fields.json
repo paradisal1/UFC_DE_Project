@@ -5,7 +5,9 @@
         "eventlocation": "normalize-space(//li[@class='b-list__box-list-item'][i][2]/text()[2])"
     },
     "fightxpaths": {
+        "id":"",
         "weightclass": "normalize-space(//*[@class='b-fight-details__fight-title']/text()[last()])",
+        "titlefight": "normalize-space(//i[@class='b-fight-details__fight-title']/img[contains(@src, 'belt')])",
         "method": "normalize-space(//*[@class='b-fight-details__text'][1]/i[1]/i[2]/text())",
         "round": "normalize-space(//*[@class='b-fight-details__text'][1]/i[2]/text()[2])",
         "time": "normalize-space(//*[@class='b-fight-details__text'][1]/i[3]/text()[2])",
@@ -54,10 +56,10 @@
         "winningfighter": "*//i[@class='b-fight-details__person-status b-fight-details__person-status_style_green']/following-sibling::div//a/@href"
     },
     "bonusesxpaths": {
-        "perf": "*//img[contains(@src, 'perf')][@src]",
-        "sub": "*//img[contains(@src, 'sub')][@src]",
-        "fight": "*//img[contains(@src, 'fight')][@src]",
-        "ko": "*//img[contains(@src, 'ko')][@src]"
+        "perf": "*//img[contains(@src, 'perf')]/@src",
+        "sub": "*//img[contains(@src, 'sub')]/@src",
+        "fight": "*//img[contains(@src, 'fight')]/@src",
+        "ko": "*//img[contains(@src, 'ko')]/@src"
     },
     "judgexpaths": {
         "Judge1": "normalize-space(//*[@class='b-fight-details__fight']//p[2]/i[2]/span/text())",

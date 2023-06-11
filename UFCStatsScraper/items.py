@@ -2,19 +2,14 @@ import logging
 from scrapy import loader, Item, Field
 from itemloaders.processors import MapCompose, TakeFirst
 import json
+from pathlib import Path
 
-from UFCStatsScraper.utils import remove_whitespace, remove_newlines, replace_empty_string
+from UFCStatsScraper.utils import remove_whitespace, remove_newlines, replace_empty_string, remove_double_quotes, remove_single_quotes
 
 logger = logging.getLogger(__name__)
 
 
 class BaseItem(Item):
-    default_input_processor = MapCompose(
-        remove_whitespace,
-        remove_newlines,
-        replace_empty_string,
-    )
-    default_output_processor = TakeFirst()
 
     def _get_fields_path(self):
         return f"UFCStatsScraper/itemfieldlists/{self.__class__.__name__.lower().replace('item','')}_fields.json"
@@ -33,8 +28,17 @@ class BaseItem(Item):
 class BaseItemLoader(loader.ItemLoader):
     failed_fields = []
 
-    def __init__(self, response, item=None, **kwargs):
-        super().__init__(response=response, item=item)
+    default_input_processor = MapCompose(
+        remove_whitespace,
+        remove_newlines,
+        replace_empty_string,
+        remove_double_quotes,
+        remove_single_quotes
+    )
+    default_output_processor = TakeFirst()
+
+    def __init__(self, response, item=None, *args, **kwargs):
+        super().__init__(response=response, item=item, *args, **kwargs)
         self.xpath_field_dict = self.get_fields()
 
         self.response = response
@@ -49,13 +53,15 @@ class BaseItemLoader(loader.ItemLoader):
         with open(self._get_fields_path(), 'r') as f:
             return json.load(f)
 
-    def add_all_fields(self):
-        for cat in self.xpath_field_dict.keys():
-            for key, value in self.xpath_field_dict[cat].items():
+    def add_all_fields(self, xpath_field_dict):
+        for cat in xpath_field_dict.keys():
+            for key, value in xpath_field_dict[cat].items():
                 if not value or value == '':
                     self.loaded_separately.append(key)
                 else:
                     self._add_field(key, self.get_xpath_value(self.response, value))
+
+
 
 
     def _add_field(self, key, value):
@@ -78,38 +84,25 @@ class BaseItemLoader(loader.ItemLoader):
 
 
 class UFCStatsFightItem(BaseItem):
-    default_input_processor = MapCompose(
-        remove_whitespace,
-        remove_newlines,
-        replace_empty_string,
-    )
-    default_output_processor = TakeFirst()
-
-    def __init__(self):
-        super().__init__()
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
 class UFCStatsFightItemLoader(BaseItemLoader):
-
-
-    def __init__(self, response, item=UFCStatsFightItem, event_info_dict=None):
-        item = item()
-        super().__init__(response=response, item=item)
+    def __init__(self, response, item=UFCStatsFightItem, event_info_dict=None, *args, **kwargs):
+        super().__init__(response=response, item=item(), *args, **kwargs)
+        self._add_field('id', Path(response.url).name)
         self.failed_fields = []
 
         if event_info_dict:
             self.add_event_fields(response, event_info_dict)
-        self.add_other_fields(response)
+
+        self.add_all_fields({key: value for key, value in self.xpath_field_dict.items() if key != "eventxpaths"})
+
         logger.warning(f"Failed fields: {self.failed_fields} for {response.url}")
 
     def add_event_fields(self, response, event_info_dict):
         for key, value in event_info_dict.items():
             self._add_field(key, value)
-
-    def add_other_fields(self, response):
-        cats = {key: value for key, value in self.xpath_field_dict.items() if key != "eventxpaths"}
-        for cat in cats:
-            for key, value in self.xpath_field_dict[cat].items():
-                self._add_field(key, self.get_xpath_value(response, value))
 
     @staticmethod
     def get_event_field_paths():
@@ -119,29 +112,21 @@ class UFCStatsFightItemLoader(BaseItemLoader):
 
 
 class UFCStatsFighterItem(BaseItem):
-    default_input_processor = MapCompose(
-        remove_whitespace,
-        remove_newlines,
-        replace_empty_string,
-    )
-    default_output_processor = TakeFirst()
-
-    def __init__(self):
-        super().__init__()
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
 
 
 
 
 class UFCStatsFighterItemLoader(BaseItemLoader):
-    def __init__(self, response, item=UFCStatsFighterItem):
-        item = item()
-        super().__init__(response=response, item=item)
+    def __init__(self, response, item=UFCStatsFighterItem, *args, **kwargs):
+        super().__init__(response=response, item=item(), *args, **kwargs)
 
         self.failed_fields = []
         self.loaded_separately = []
 
-        self.add_all_fields()
+        self.add_all_fields(self.xpath_field_dict)
         self.load_separate_fields()
 
         logger.warning(f"Failed fields: {self.failed_fields} for {response.url}")
