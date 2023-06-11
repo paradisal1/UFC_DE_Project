@@ -1,5 +1,7 @@
 /.venv
 /.scrapy
-/data
+./*.db
 */__pycache__
 profiles.yml
+.gitignore
+.vscode
