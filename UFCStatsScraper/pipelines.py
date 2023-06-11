@@ -8,7 +8,7 @@
 from itemadapter import ItemAdapter
 import logging
 
-from UFCStatsScraper.utils import DuckDBInterface
+from data.utils.DuckDBInterface import DuckDBInterface
 
 class DuckDBPipeline:
 
