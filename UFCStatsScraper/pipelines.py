@@ -8,7 +8,7 @@
 from itemadapter import ItemAdapter
 import logging
 
-from data.utils.DuckDBInterface import DuckDBInterface
+from data.databaseutils.DuckDBInterface import DuckDBInterface
 
 class DuckDBPipeline:
 
@@ -20,12 +20,16 @@ class DuckDBPipeline:
 
     def open_spider(self, spider):
         self.db = DuckDBInterface(spider.name)
+        self.db.execute('CREATE SCHEMA IF NOT EXISTS raw')
 
         for item in self.table_item_dict[spider.name]:
             self.db.fieldlist_to_table(item)
 
     def process_item(self, item, spider):
+
         self.db.insert_item(item)
+        pass
+
 
     def close_spider(self, spider):
         self.db.connection.close()

@@ -1,4 +1,3 @@
-
 from pathlib import Path
 
 def remove_single_quotes(text):
@@ -130,5 +129,4 @@ def replace_empty_string(text):
 
 
 if __name__ == "__main__":
-    db = DuckDBInterface('ufcstats.db')
-    db.execute('select * from ufcstatsfighttable')
+    pass

@@ -1,7 +1,8 @@
 {
     "fighterxpaths" : {
-        "fighterurl": "",
         "fightername": "normalize-space(//h2/span/text())",
+        "fighternickname": "//p[@class='b-content__Nickname']/text()",
+        "record": "normalize-space(//span[@class='b-content__title-record']/text())",
         "height": "normalize-space(//ul[@class='b-list__box-list']/li[1]/text()[2])",
         "weight": "normalize-space(//ul[@class='b-list__box-list']/li[2]/text()[2])",
         "reach": "normalize-space(//ul[@class='b-list__box-list']/li[3]/text()[2])",
@@ -14,6 +15,7 @@
         "tdavg": "normalize-space(//div[@class='b-list__info-box-left']/following-sibling::div//li[2]/text()[2])",
         "tdacc": "normalize-space(//div[@class='b-list__info-box-left']/following-sibling::div//li[3]/text()[2])",
         "tddef": "normalize-space(//div[@class='b-list__info-box-left']/following-sibling::div//li[4]/text()[2])",
-        "subavg": "normalize-space(//div[@class='b-list__info-box-left']/following-sibling::div//li[5]/text()[2])"
+        "subavg": "normalize-space(//div[@class='b-list__info-box-left']/following-sibling::div//li[5]/text()[2])",
+        "fighterurl":""
     }
 }

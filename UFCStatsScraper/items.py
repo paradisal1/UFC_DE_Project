@@ -3,6 +3,7 @@ from scrapy import loader, Item, Field
 from itemloaders.processors import MapCompose, TakeFirst
 import json
 from pathlib import Path
+import numpy as np
 
 from UFCStatsScraper.utils import remove_whitespace, remove_newlines, replace_empty_string, remove_double_quotes, remove_single_quotes
 
@@ -61,9 +62,6 @@ class BaseItemLoader(loader.ItemLoader):
                 else:
                     self._add_field(key, self.get_xpath_value(self.response, value))
 
-
-
-
     def _add_field(self, key, value):
         try:
             if value:
@@ -90,11 +88,13 @@ class UFCStatsFightItem(BaseItem):
 class UFCStatsFightItemLoader(BaseItemLoader):
     def __init__(self, response, item=UFCStatsFightItem, event_info_dict=None, *args, **kwargs):
         super().__init__(response=response, item=item(), *args, **kwargs)
-        self._add_field('id', Path(response.url).name)
+
         self.failed_fields = []
 
         if event_info_dict:
             self.add_event_fields(response, event_info_dict)
+
+        self._add_field('id', Path(response.url).name)
 
         self.add_all_fields({key: value for key, value in self.xpath_field_dict.items() if key != "eventxpaths"})
 

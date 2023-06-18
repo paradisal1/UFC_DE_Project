@@ -1,0 +1,6 @@
+ufc_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'data/ufcstats.duckdb'
