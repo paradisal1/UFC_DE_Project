@@ -184,4 +184,3 @@
     FROM
         raw.ufcstats_singlefights main
     INNER JOIN round_cte rcte USING (id)
-)

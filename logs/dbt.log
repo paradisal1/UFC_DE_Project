@@ -1,50 +1,2593 @@
-[0m18:33:34.705470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4A5124D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4A88A310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4A0F68D0>]}
+[0m15:53:17.787890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE4184D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE65291D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE3DB7D10>]}
 
 
-============================== 18:33:34.709194 | d6eeddf7-00b0-4449-a2a0-cac31778fe05 ==============================
-[0m18:33:34.709194 [info ] [MainThread]: Running with dbt=1.5.1
-[0m18:33:34.710194 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'warn_error': 'None', 'log_path': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
-[0m18:33:34.711195 [info ] [MainThread]: dbt version: 1.5.1
-[0m18:33:34.712194 [info ] [MainThread]: python version: 3.11.0
-[0m18:33:34.713194 [info ] [MainThread]: python path: d:\Documents\DataScience\ProjectEnvironments\UFC_DE_Project\.venv\Scripts\python.exe
-[0m18:33:34.714196 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
-[0m18:33:34.714196 [info ] [MainThread]: Using profiles.yml file at .\profiles.yml
-[0m18:33:34.715195 [info ] [MainThread]: Using dbt_project.yml file at D:\Documents\DataScience\ProjectEnvironments\UFC_DE_Project\dbt_project.yml
-[0m18:33:34.715195 [info ] [MainThread]: Configuration:
-[0m18:33:34.769413 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
-[0m18:33:34.787778 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
-[0m18:33:34.788769 [info ] [MainThread]: Required dependencies:
-[0m18:33:34.789768 [debug] [MainThread]: Executing "git --help"
-[0m18:33:34.816415 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m18:33:34.817415 [debug] [MainThread]: STDERR: "b''"
-[0m18:33:34.818139 [info ] [MainThread]:  - git [[32mOK found[0m]
+============================== 15:53:17.790890 | 0f9b88cc-3b0b-4464-8b84-8b2704aa4464 ==============================
+[0m15:53:17.790890 [info ] [MainThread]: Running with dbt=1.5.2
+[0m15:53:17.791890 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project\\logs', 'profiles_dir': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:53:17.853919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0f9b88cc-3b0b-4464-8b84-8b2704aa4464', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE6C2FA90>]}
+[0m15:53:17.862891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0f9b88cc-3b0b-4464-8b84-8b2704aa4464', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE6E616D0>]}
+[0m15:53:17.864890 [info ] [MainThread]: Registered adapter: duckdb=1.5.2
+[0m15:53:17.873889 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m15:53:17.874889 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:53:17.875891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0f9b88cc-3b0b-4464-8b84-8b2704aa4464', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE6E72450>]}
+[0m15:53:18.382890 [debug] [MainThread]: 1699: static parser successfully parsed raw\ct_raw_ufcstats_singlefights.sql
+[0m15:53:18.393889 [debug] [MainThread]: 1699: static parser successfully parsed silver\ct_rawtosilver_ufcstats_fighter.sql
+[0m15:53:18.397889 [debug] [MainThread]: 1699: static parser successfully parsed silver\ct_silver_ufcstats_singlefights.sql
+[0m15:53:18.423920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0f9b88cc-3b0b-4464-8b84-8b2704aa4464', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE6AB4F50>]}
+[0m15:53:18.428891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0f9b88cc-3b0b-4464-8b84-8b2704aa4464', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE6FFE9D0>]}
+[0m15:53:18.429890 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 316 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m15:53:18.430890 [info ] [MainThread]: 
+[0m15:53:18.431890 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:53:18.432890 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ufcstats'
+[0m15:53:18.441890 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats"
+[0m15:53:18.442890 [debug] [ThreadPool]: On list_ufcstats: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats"} */
 
-[0m18:33:34.818139 [info ] [MainThread]: Connection:
-[0m18:33:34.819137 [info ] [MainThread]:   database: ufcstats
-[0m18:33:34.820137 [info ] [MainThread]:   schema: main
-[0m18:33:34.820137 [info ] [MainThread]:   path: data/ufcstats.duckdb
-[0m18:33:34.821137 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
-[0m18:33:34.822138 [debug] [MainThread]: Using duckdb connection "debug"
-[0m18:33:34.822138 [debug] [MainThread]: On debug: select 1 as id
-[0m18:33:34.823138 [debug] [MainThread]: Opening a new connection, currently in state init
-[0m18:33:34.831654 [debug] [MainThread]: SQL status: OK in 0.0 seconds
-[0m18:33:34.832654 [debug] [MainThread]: On debug: Close
-[0m18:33:34.835657 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"ufcstats"'
+    
+  
+  
+[0m15:53:18.442890 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:53:18.453891 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:53:18.454890 [debug] [ThreadPool]: On list_ufcstats: Close
+[0m15:53:18.459891 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats"
+[0m15:53:18.459891 [debug] [ThreadPool]: On list_ufcstats: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats"} */
 
-[0m18:33:34.836657 [info ] [MainThread]: [32mAll checks passed![0m
-[0m18:33:34.838711 [debug] [MainThread]: Command `dbt debug` succeeded at 18:33:34.837655 after 0.15 seconds
-[0m18:33:34.838711 [debug] [MainThread]: Connection 'debug' was properly closed.
-[0m18:33:34.839670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4455D710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4A58B610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B4A7E3C50>]}
-[0m18:33:34.839670 [debug] [MainThread]: Flushing usage events
-[0m18:34:07.997843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F54CB8F410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F54C817C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F54CB22310>]}
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"ufcstats"'
+    
+  
+  
+[0m15:53:18.460892 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:53:18.469889 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:53:18.470889 [debug] [ThreadPool]: On list_ufcstats: Close
+[0m15:53:18.473890 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ufcstats, now create_ufcstats_main_silver)
+[0m15:53:18.473890 [debug] [ThreadPool]: Creating schema "database: "ufcstats"
+schema: "main_silver"
+"
+[0m15:53:18.477889 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_silver"
+[0m15:53:18.478890 [debug] [ThreadPool]: On create_ufcstats_main_silver: BEGIN
+[0m15:53:18.478890 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:53:18.486934 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:53:18.487934 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_silver"
+[0m15:53:18.487934 [debug] [ThreadPool]: On create_ufcstats_main_silver: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "create_ufcstats_main_silver"} */
+create schema if not exists "ufcstats"."main_silver"
+[0m15:53:18.487934 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:53:18.488934 [debug] [ThreadPool]: On create_ufcstats_main_silver: COMMIT
+[0m15:53:18.489934 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_silver"
+[0m15:53:18.489934 [debug] [ThreadPool]: On create_ufcstats_main_silver: COMMIT
+[0m15:53:18.490934 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:53:18.490934 [debug] [ThreadPool]: On create_ufcstats_main_silver: Close
+[0m15:53:18.493934 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_ufcstats_main_silver, now create_ufcstats_main_raw)
+[0m15:53:18.494964 [debug] [ThreadPool]: Creating schema "database: "ufcstats"
+schema: "main_raw"
+"
+[0m15:53:18.495963 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_raw"
+[0m15:53:18.496963 [debug] [ThreadPool]: On create_ufcstats_main_raw: BEGIN
+[0m15:53:18.496963 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:53:18.505934 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:53:18.505934 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_raw"
+[0m15:53:18.505934 [debug] [ThreadPool]: On create_ufcstats_main_raw: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "create_ufcstats_main_raw"} */
+create schema if not exists "ufcstats"."main_raw"
+[0m15:53:18.506934 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:53:18.507934 [debug] [ThreadPool]: On create_ufcstats_main_raw: COMMIT
+[0m15:53:18.507934 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_raw"
+[0m15:53:18.508934 [debug] [ThreadPool]: On create_ufcstats_main_raw: COMMIT
+[0m15:53:18.508934 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:53:18.509963 [debug] [ThreadPool]: On create_ufcstats_main_raw: Close
+[0m15:53:18.513248 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ufcstats_main_silver'
+[0m15:53:18.518283 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_silver"
+[0m15:53:18.518283 [debug] [ThreadPool]: On list_ufcstats_main_silver: BEGIN
+[0m15:53:18.518283 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:53:18.527283 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:53:18.527283 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_silver"
+[0m15:53:18.527283 [debug] [ThreadPool]: On list_ufcstats_main_silver: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats_main_silver"} */
+select
+      'ufcstats' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_silver'
+    
+    and table_catalog = 'ufcstats'
+    
+  
+[0m15:53:18.542283 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:53:18.547285 [debug] [ThreadPool]: On list_ufcstats_main_silver: ROLLBACK
+[0m15:53:18.548283 [debug] [ThreadPool]: Failed to rollback 'list_ufcstats_main_silver'
+[0m15:53:18.548283 [debug] [ThreadPool]: On list_ufcstats_main_silver: Close
+[0m15:53:18.552303 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ufcstats_main_silver, now list_ufcstats_main_raw)
+[0m15:53:18.554321 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_raw"
+[0m15:53:18.554321 [debug] [ThreadPool]: On list_ufcstats_main_raw: BEGIN
+[0m15:53:18.555321 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:53:18.563321 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:53:18.563321 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_raw"
+[0m15:53:18.564321 [debug] [ThreadPool]: On list_ufcstats_main_raw: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats_main_raw"} */
+select
+      'ufcstats' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_raw'
+    
+    and table_catalog = 'ufcstats'
+    
+  
+[0m15:53:18.578321 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:53:18.583321 [debug] [ThreadPool]: On list_ufcstats_main_raw: ROLLBACK
+[0m15:53:18.584321 [debug] [ThreadPool]: Failed to rollback 'list_ufcstats_main_raw'
+[0m15:53:18.584321 [debug] [ThreadPool]: On list_ufcstats_main_raw: Close
+[0m15:53:18.587350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0f9b88cc-3b0b-4464-8b84-8b2704aa4464', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE6FF7C50>]}
+[0m15:53:18.588353 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:53:18.588353 [debug] [MainThread]: On master: BEGIN
+[0m15:53:18.589354 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:53:18.597321 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m15:53:18.597321 [debug] [MainThread]: On master: COMMIT
+[0m15:53:18.598321 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:53:18.598321 [debug] [MainThread]: On master: COMMIT
+[0m15:53:18.599321 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m15:53:18.599321 [debug] [MainThread]: On master: Close
+[0m15:53:18.601320 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:53:18.602320 [info ] [MainThread]: 
+[0m15:53:18.606322 [debug] [Thread-1 (]: Began running node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m15:53:18.607321 [info ] [Thread-1 (]: 1 of 3 START sql table model main_raw.ct_raw_ufcstats_singlefights ............. [RUN]
+[0m15:53:18.608320 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.ufcstats.ct_raw_ufcstats_singlefights'
+[0m15:53:18.608320 [debug] [Thread-1 (]: Began compiling node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m15:53:18.610320 [debug] [Thread-1 (]: Writing injected SQL for node "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:53:18.612321 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_raw_ufcstats_singlefights (compile): 15:53:18.609320 => 15:53:18.612321
+[0m15:53:18.613321 [debug] [Thread-1 (]: Began executing node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m15:53:18.640322 [debug] [Thread-1 (]: Writing runtime sql for node "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:53:18.642322 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:53:18.643323 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: BEGIN
+[0m15:53:18.643323 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:53:18.651323 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:18.652323 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:53:18.653323 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+
+  
+    
+    
+
+    create  table
+      "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights__dbt_tmp"
+  
+    as (
+      WITH F1 AS (
+        SELECT
+            eventname,
+            eventdate,
+            eventlocation,
+            id,
+            weightclass,
+            method,
+            round,
+            time,
+            timeformat,
+            referee,
+            fighter1id fighterid,
+            fighter1 fightername,
+            fighter1nickname fighternickname,
+            fighter1kd fighterkd,
+            fighter1sigstr fightersigstr,
+            fighter1sigstrpct fightersigstrpct,
+            fighter1totalstr fightertotalstr,
+            fighter1td fightertd,
+            fighter1tdpct fightertdpct,
+            fighter1subatt fightersubatt,
+            fighter1rev fighterrev,
+            fighter1ctrl fighterctrl,
+            fighter1head fighterhead,
+            fighter1body fighterbody,
+            fighter1leg fighterleg,
+            fighter1distance fighterdistance,
+            fighter1clinch fighterclinch,
+            fighter1ground fighterground,
+            fighter2id opponentid,
+            winningfighter,
+            perf,
+            sub,
+            fight,
+            ko,
+            judge1,
+            judge1_score,
+            judge2,
+            judge2_score,
+            judge3,
+            judge3_score
+        FROM
+            raw.ufcstatsfighttable)
+    SELECT
+        eventname,
+        eventdate,
+        eventlocation,
+        id,
+        weightclass,
+        method,
+        round,
+        time,
+        timeformat,
+        referee,
+        fighter2id fighterid,
+        fighter2 fightername,
+        fighter2nickname fighternickname,
+        fighter2kd fighterkd,
+        fighter2sigstr fightersigstr,
+        fighter2sigstrpct fightersigstrpct,
+        fighter2totalstr fightertotalstr,
+        fighter2td fightertd,
+        fighter2tdpct fightertdpct,
+        fighter2subatt fightersubatt,
+        fighter2rev fighterrev,
+        fighter2ctrl fighterctrl,
+        fighter2head fighterhead,
+        fighter2body fighterbody,
+        fighter2leg fighterleg,
+        fighter2distance fighterdistance,
+        fighter2clinch fighterclinch,
+        fighter2ground fighterground,
+        fighter1id opponentid,
+        winningfighter,
+        perf,
+        sub,
+        fight,
+        ko,
+        judge1,
+        judge1_score,
+        judge2,
+        judge2_score,
+        judge3,
+        judge3_score
+    FROM
+        raw.ufcstatsfighttable
+    UNION ALL
+    SELECT * FROM F1
+    );
+  
+  
+[0m15:53:18.796322 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:18.801323 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:53:18.801323 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+alter table "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights" rename to "ct_raw_ufcstats_singlefights__dbt_backup"
+[0m15:53:18.802323 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:18.804323 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:53:18.805323 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+alter table "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights__dbt_tmp" rename to "ct_raw_ufcstats_singlefights"
+[0m15:53:18.805323 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:18.822323 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: COMMIT
+[0m15:53:18.823323 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:53:18.823323 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: COMMIT
+[0m15:53:18.948303 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:18.956248 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:53:18.957276 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+drop table if exists "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights__dbt_backup" cascade
+[0m15:53:18.976639 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:18.978571 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_raw_ufcstats_singlefights (execute): 15:53:18.613321 => 15:53:18.978571
+[0m15:53:18.978571 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: Close
+[0m15:53:19.113901 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f9b88cc-3b0b-4464-8b84-8b2704aa4464', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE6FF7D10>]}
+[0m15:53:19.115909 [info ] [Thread-1 (]: 1 of 3 OK created sql table model main_raw.ct_raw_ufcstats_singlefights ........ [[32mOK[0m in 0.51s]
+[0m15:53:19.116901 [debug] [Thread-1 (]: Finished running node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m15:53:19.117901 [debug] [Thread-1 (]: Began running node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m15:53:19.118902 [info ] [Thread-1 (]: 2 of 3 START sql table model main_silver.ct_rawtosilver_ufcstats_fighter ....... [RUN]
+[0m15:53:19.119902 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ufcstats.ct_raw_ufcstats_singlefights, now model.ufcstats.ct_rawtosilver_ufcstats_fighter)
+[0m15:53:19.119902 [debug] [Thread-1 (]: Began compiling node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m15:53:19.121902 [debug] [Thread-1 (]: Writing injected SQL for node "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:53:19.122902 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_rawtosilver_ufcstats_fighter (compile): 15:53:19.119902 => 15:53:19.122902
+[0m15:53:19.122902 [debug] [Thread-1 (]: Began executing node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m15:53:19.126901 [debug] [Thread-1 (]: Writing runtime sql for node "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:53:19.127901 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:53:19.128903 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: BEGIN
+[0m15:53:19.128903 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:53:19.137901 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:19.137901 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:53:19.138901 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+
+  
+    
+    
+
+    create  table
+      "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter__dbt_tmp"
+  
+    as (
+      WITH record_cte AS (
+            SELECT
+                STR_SPLIT(fighterurl, '/')[5] fighterid,
+                REGEXP_EXTRACT_ALL(record, '\d+') AS record_list
+            FROM
+                raw_ufcstatsfightertable
+        )
+
+
+        SELECT
+            STR_SPLIT(main.fighterurl, '/')[5] AS fighterid,
+            main.fightername,
+            main.fighternickname,
+            rec.record_list[1]::int AS wins,
+            rec.record_list[2]::int AS losses,
+            rec.record_list[3]::int AS draws,
+            IFNULL(rec.record_list[4]::int, 0) AS no_contests,
+            (rec.record_list[1]::int + rec.record_list[2]::int + IFNULL(rec.record_list[3], 0)::int + IFNULL(rec.record_list[4], 0)::int) AS totalfights,
+            CASE
+                WHEN CONTAINS(main.weight, '-') THEN NULL
+                ELSE REGEXP_EXTRACT(TRIM(main.weight), '\d+')::int
+            END AS weightlbs,
+            CASE
+                WHEN
+                    CONTAINS(main.height, '-') THEN NULL
+                ELSE
+                    (STR_SPLIT(main.height, ' ')[1]::int * 12 + STR_SPLIT(main.height, ' ')[2]::int)
+            END AS heightinches,
+            CASE
+                WHEN
+                    CONTAINS(main.reach, '-') THEN NULL
+                ELSE
+                    main.reach::int
+            END AS reach,
+            main.stance,
+            STRPTIME(
+                CASE
+                    WHEN CONTAINS(main.dob, '-') THEN NULL
+                ELSE
+                    main.dob
+                END,                    '%b %d, %Y') AS dob,
+            main.slpm::FLOAT AS slpm,
+            CONCAT('.', REGEXP_EXTRACT(main.stracc, '\d+'))::FLOAT AS  scraped_stracc,
+            main.sapm::FLOAT AS scraped_sapm,
+            CONCAT('.', REGEXP_EXTRACT(main.strdef, '\d+'))::FLOAT AS scraped_strdef,
+            main.tdavg::FLOAT AS scraped_tdavg,
+            CONCAT('.', REGEXP_EXTRACT(main.tdacc, '\d+'))::FLOAT AS scraped_tdacc,
+            CONCAT('.', REGEXP_EXTRACT(main.tddef, '\d+'))::FLOAT AS scraped_tddef,
+            main.subavg::FLOAT AS scraped_subavg
+        FROM
+            raw_ufcstatsfightertable main
+        INNER JOIN
+            record_cte rec ON rec.fighterid = STR_SPLIT(main.fighterurl, '/')[5]
+    );
+  
+  
+[0m15:53:19.152901 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:19.155901 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:53:19.155901 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+alter table "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter" rename to "ct_rawtosilver_ufcstats_fighter__dbt_backup"
+[0m15:53:19.156904 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:19.158901 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:53:19.159901 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+alter table "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter__dbt_tmp" rename to "ct_rawtosilver_ufcstats_fighter"
+[0m15:53:19.159901 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:19.161901 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: COMMIT
+[0m15:53:19.162901 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:53:19.162901 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: COMMIT
+[0m15:53:19.202326 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:19.205334 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:53:19.205334 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+drop table if exists "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter__dbt_backup" cascade
+[0m15:53:19.223947 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:19.224953 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_rawtosilver_ufcstats_fighter (execute): 15:53:19.123902 => 15:53:19.224953
+[0m15:53:19.225953 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: Close
+[0m15:53:19.334173 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f9b88cc-3b0b-4464-8b84-8b2704aa4464', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE6F5FC90>]}
+[0m15:53:19.335201 [info ] [Thread-1 (]: 2 of 3 OK created sql table model main_silver.ct_rawtosilver_ufcstats_fighter .. [[32mOK[0m in 0.22s]
+[0m15:53:19.336202 [debug] [Thread-1 (]: Finished running node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m15:53:19.336202 [debug] [Thread-1 (]: Began running node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m15:53:19.337204 [info ] [Thread-1 (]: 3 of 3 START sql table model main_silver.ct_silver_ufcstats_singlefights ....... [RUN]
+[0m15:53:19.338202 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ufcstats.ct_rawtosilver_ufcstats_fighter, now model.ufcstats.ct_silver_ufcstats_singlefights)
+[0m15:53:19.338202 [debug] [Thread-1 (]: Began compiling node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m15:53:19.340219 [debug] [Thread-1 (]: Writing injected SQL for node "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:53:19.341173 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_silver_ufcstats_singlefights (compile): 15:53:19.339209 => 15:53:19.341173
+[0m15:53:19.342173 [debug] [Thread-1 (]: Began executing node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m15:53:19.345201 [debug] [Thread-1 (]: Writing runtime sql for node "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:53:19.346201 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:53:19.347201 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: BEGIN
+[0m15:53:19.347201 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:53:19.356173 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:19.357174 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:53:19.357174 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+
+  
+    
+    
+
+    create  table
+      "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights__dbt_tmp"
+  
+    as (
+      WITH round_cte AS (
+        SELECT
+            id,
+            CASE
+                WHEN TIMEFORMAT == 'No Time Limit' THEN NULL
+                ELSE [val::int for val in STR_SPLIT(REPLACE(REPLACE(REGEXP_EXTRACT(timeformat, '\((.*)\)'), '(', ''),')',''), '-')]
+            END AS rnds
+        FROM
+            raw.ufcstats_singlefights
+    )
+
+    SELECT
+        eventname,
+        STRPTIME(eventdate, '%B %d, %Y') AS eventdate,
+        STR_SPLIT(eventlocation, ', ')[1] AS eventcity,
+        STR_SPLIT(eventlocation, ', ')[2] AS eventstate,
+        STR_SPLIT(eventlocation, ', ')[3] AS eventcountry,
+        id as fightid,
+        REPLACE(weightclass, ' Bout', '') weightclass,
+
+        CASE
+            WHEN
+                CONTAINS(weightclass, 'Title') THEN True::BOOLEAN
+            ELSE
+                False::BOOLEAN
+        END AS titlefight,
+        method,
+        round,
+        -- Total rounds in fight
+        LIST_COUNT(rcte.rnds) AS totalrounds,
+        LIST_SUM(rcte.rnds) * 60 AS totaltime,
+        CASE
+            WHEN round = 1 THEN str_split(time, ':')[1]::int * 60 + str_split(time, ':')[2]::int
+            ELSE LIST_SUM(rcte.rnds[1:round::int - 1]) * 60 + str_split(time, ':')[1]::int * 60 + str_split(time, ':')[2]::int
+        END AS time,
+        referee,
+        fightername,
+        fighterid,
+        opponentid,
+        fighternickname,
+        CASE
+            WHEN CONTAINS(fighterkd, '-') THEN NULL
+            ELSE fighterkd::int
+        END AS fighterkd,
+        CASE
+            WHEN CONTAINS(fightersigstr, '-') THEN NULL
+            ELSE STR_SPLIT(fightersigstr, ' of ')[1]::int
+        END AS fightersigstr,
+        CASE
+            WHEN CONTAINS(fightersigstr, '-') THEN NULL
+            ELSE STR_SPLIT(fightersigstr, ' of ')[2]::int
+        END AS fightersigstratt,
+        CASE
+            WHEN CONTAINS(fightersigstrpct, '-') OR fightersigstrpct == '' THEN NULL
+            ELSE REGEXP_EXTRACT(fightersigstrpct, '([0-9]+)')::int / 100
+        END AS fightersigstrpct,
+        CASE
+            WHEN CONTAINS(FIGHTERTOTALSTR, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTOTALSTR, ' of ')[1]::int
+        END AS fightertotalstr,
+        CASE
+            WHEN CONTAINS(FIGHTERTOTALSTR, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTOTALSTR, ' of ')[2]::int
+        END AS fightertotalstratt,
+        CASE
+            WHEN CONTAINS(FIGHTERTD, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTD, ' of ')[1]::int
+        END AS fightertd,
+        CASE
+            WHEN CONTAINS(FIGHTERTD, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTD, ' of ')[2]::int
+        END AS fightertdatt,
+        CASE
+            WHEN CONTAINS(fightertdpct, '-') OR fightertdpct == '' THEN NULL
+            ELSE REGEXP_EXTRACT(fightertdpct, '([0-9]+)')::int / 100
+        END AS fightertdpct,
+        CASE
+            WHEN CONTAINS(fightersubatt, '-') THEN NULL
+            ELSE fightersubatt::int
+        END AS fightersubatt,
+        CASE
+            WHEN CONTAINS(fighterrev, '-') THEN NULL
+            ELSE fighterrev::int
+        END AS fighterrev,
+        CASE
+            WHEN CONTAINS(fighterctrl, '-') THEN NULL
+            ELSE STR_SPLIT(fighterctrl, ':')[1]::int * 60 + STR_SPLIT(fighterctrl, ':')[2]::int
+        END AS fighterctrl,
+        CASE
+            WHEN CONTAINS(fighterhead, '-') THEN NULL
+            ELSE STR_SPLIT(fighterhead, ' of ')[1]::int
+        END AS fighterhead,
+        CASE
+            WHEN CONTAINS(fighterhead, '-') THEN NULL
+            ELSE STR_SPLIT(fighterhead, ' of ')[2]::int
+        END AS fighterheadatt,
+        CASE
+            WHEN CONTAINS(fighterbody, '-') THEN NULL
+            ELSE STR_SPLIT(fighterbody, ' of ')[1]::int
+        END AS fighterbody,
+        CASE
+            WHEN CONTAINS(fighterbody, '-') THEN NULL
+            ELSE STR_SPLIT(fighterbody, ' of ')[2]::int
+        END AS fighterbodyatt,
+        CASE
+            WHEN CONTAINS(fighterleg, '-') THEN NULL
+            ELSE STR_SPLIT(fighterleg, ' of ')[1]::int
+        END AS fighterleg,
+        CASE
+            WHEN CONTAINS(fighterleg, '-') THEN NULL
+            ELSE STR_SPLIT(fighterleg, ' of ')[2]::int
+        END AS fighterlegatt,
+        CASE
+            WHEN CONTAINS(fighterdistance, '-') THEN NULL
+            ELSE STR_SPLIT(fighterdistance, ' of ')[1]::int
+        END AS fighterdistance,
+        CASE
+            WHEN CONTAINS(fighterdistance, '-') THEN NULL
+            ELSE STR_SPLIT(fighterdistance, ' of ')[2]::int
+        END AS fighterdistanceatt,
+        CASE
+            WHEN CONTAINS(fighterclinch, '-') THEN NULL
+            ELSE STR_SPLIT(fighterclinch, ' of ')[1]::int
+        END AS fighterclinch,
+        CASE
+            WHEN CONTAINS(fighterclinch, '-') THEN NULL
+            ELSE STR_SPLIT(fighterclinch, ' of ')[2]::int
+        END AS fighterclinchatt,
+        CASE
+            WHEN CONTAINS(fighterground, '-') THEN NULL
+            ELSE STR_SPLIT(fighterground, ' of ')[1]::int
+        END AS fighterground,
+        CASE
+            WHEN CONTAINS(fighterground, '-') THEN NULL
+            ELSE STR_SPLIT(fighterground, ' of ')[2]::int
+        END AS fightergroundatt,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS winner,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] AND perf != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS performancebonus,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] AND sub != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS submissionbonus,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] AND ko != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS knockoutbonus,
+        CASE
+            WHEN fight != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS fightofthenight,
+        judge1,
+        CASE
+            WHEN judge1_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge1_score, ' - ')[1]::int
+        END AS judge1fighter1score,
+        CASE
+            WHEN judge1_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge1_score, ' - ')[2]::int
+        END AS judge1fighter2score,
+        judge2,
+        CASE
+            WHEN judge2_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge2_score, ' - ')[1]::int
+        END AS judge2fighter1score,
+        CASE
+            WHEN judge2_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge2_score, ' - ')[2]::int
+        END AS judge2fighter2score,
+        judge3,
+        CASE
+            WHEN judge3_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge3_score, ' - ')[1]::int
+        END AS judge3fighter1score,
+        CASE
+            WHEN judge3_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge3_score, ' - ')[2]::int
+        END AS judge3fighter2score
+    FROM
+        raw.ufcstats_singlefights main
+    INNER JOIN round_cte rcte USING (id)
+    );
+  
+  
+[0m15:53:19.550201 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:19.553201 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:53:19.553201 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+alter table "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights" rename to "ct_silver_ufcstats_singlefights__dbt_backup"
+[0m15:53:19.554201 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:19.556203 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:53:19.557201 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+alter table "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights__dbt_tmp" rename to "ct_silver_ufcstats_singlefights"
+[0m15:53:19.558202 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:19.559201 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: COMMIT
+[0m15:53:19.560201 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:53:19.560201 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: COMMIT
+[0m15:53:19.768508 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:19.771507 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:53:19.771507 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+drop table if exists "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights__dbt_backup" cascade
+[0m15:53:19.786116 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:53:19.787135 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_silver_ufcstats_singlefights (execute): 15:53:19.342173 => 15:53:19.787135
+[0m15:53:19.788135 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: Close
+[0m15:53:20.021429 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0f9b88cc-3b0b-4464-8b84-8b2704aa4464', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE6FA8F90>]}
+[0m15:53:20.023428 [info ] [Thread-1 (]: 3 of 3 OK created sql table model main_silver.ct_silver_ufcstats_singlefights .. [[32mOK[0m in 0.68s]
+[0m15:53:20.026424 [debug] [Thread-1 (]: Finished running node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m15:53:20.031413 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:53:20.031413 [debug] [MainThread]: On master: BEGIN
+[0m15:53:20.031413 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:53:20.040415 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m15:53:20.041418 [debug] [MainThread]: On master: COMMIT
+[0m15:53:20.041418 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:53:20.042384 [debug] [MainThread]: On master: COMMIT
+[0m15:53:20.042384 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m15:53:20.042384 [debug] [MainThread]: On master: Close
+[0m15:53:20.045415 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:53:20.045415 [debug] [MainThread]: Connection 'create_ufcstats_main_raw' was properly closed.
+[0m15:53:20.046417 [debug] [MainThread]: Connection 'list_ufcstats_main_raw' was properly closed.
+[0m15:53:20.046417 [debug] [MainThread]: Connection 'model.ufcstats.ct_silver_ufcstats_singlefights' was properly closed.
+[0m15:53:20.047414 [info ] [MainThread]: 
+[0m15:53:20.047414 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 1.62 seconds (1.62s).
+[0m15:53:20.048415 [debug] [MainThread]: Command end result
+[0m15:53:20.054416 [info ] [MainThread]: 
+[0m15:53:20.055414 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:53:20.055414 [info ] [MainThread]: 
+[0m15:53:20.056384 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m15:53:20.057423 [debug] [MainThread]: Command `dbt build` succeeded at 15:53:20.057423 after 2.29 seconds
+[0m15:53:20.058415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE6754FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE04BAD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DE04CD710>]}
+[0m15:53:20.058415 [debug] [MainThread]: Flushing usage events
+[0m15:58:45.533671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A6C1321890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A6C1011410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A6C100A910>]}
 
 
-============================== 18:34:08.000839 | d9d70bf8-d1f7-48fe-be93-7fcc30ea0870 ==============================
-[0m18:34:08.000839 [info ] [MainThread]: Running with dbt=1.5.1
-[0m18:34:08.001839 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '.', 'log_path': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
-[0m18:34:08.002841 [info ] [MainThread]: To view your profiles.yml file, run:
+============================== 15:58:45.537671 | 121d75dc-ad2f-42d6-ad3c-61067cd6a34c ==============================
+[0m15:58:45.537671 [info ] [MainThread]: Running with dbt=1.5.2
+[0m15:58:45.537671 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project\\logs', 'profiles_dir': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:58:45.596700 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['packages-install-path']: ['dbt/ufcstats/packages'] is not valid under any of the given schemas
 
-start .
-[0m18:34:08.004841 [debug] [MainThread]: Command `dbt debug` succeeded at 18:34:08.004841 after 0.03 seconds
-[0m18:34:08.005839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F54CF2C350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F54C886CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F54C82DB90>]}
-[0m18:34:08.005839 [debug] [MainThread]: Flushing usage events
+Error encountered in D:\Documents\DataScience\ProjectEnvironments\UFC_DE_Project\dbt_project.yml
+[0m15:58:45.598701 [debug] [MainThread]: Command `dbt build` failed at 15:58:45.598701 after 0.08 seconds
+[0m15:58:45.598701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A6C1742610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A6C130BE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A6BAF7AC50>]}
+[0m15:58:45.599698 [debug] [MainThread]: Flushing usage events
+[0m15:59:12.294291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AD61C8290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AD61E9FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AD61FA410>]}
+
+
+============================== 15:59:12.298292 | 183250da-d471-4907-b3f2-7a881ab4c84e ==============================
+[0m15:59:12.298292 [info ] [MainThread]: Running with dbt=1.5.2
+[0m15:59:12.299292 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:59:12.356323 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path []: Additional properties are not allowed ('docs-path' was unexpected)
+
+Error encountered in D:\Documents\DataScience\ProjectEnvironments\UFC_DE_Project\dbt_project.yml
+[0m15:59:12.359320 [debug] [MainThread]: Command `dbt build` failed at 15:59:12.359320 after 0.08 seconds
+[0m15:59:12.359320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AD629D9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AD61D0150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022AD623BE50>]}
+[0m15:59:12.360319 [debug] [MainThread]: Flushing usage events
+[0m15:59:35.039372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E42426990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E42116410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E3FE9E750>]}
+
+
+============================== 15:59:35.042402 | 0bde5f17-0adf-48d7-94d3-bf1e67699ba2 ==============================
+[0m15:59:35.042402 [info ] [MainThread]: Running with dbt=1.5.2
+[0m15:59:35.043374 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project', 'debug': 'False', 'warn_error': 'None', 'log_path': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:59:35.105403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0bde5f17-0adf-48d7-94d3-bf1e67699ba2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E421B9490>]}
+[0m15:59:35.115402 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0bde5f17-0adf-48d7-94d3-bf1e67699ba2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E42A73150>]}
+[0m15:59:35.116399 [info ] [MainThread]: Registered adapter: duckdb=1.5.2
+[0m15:59:35.126402 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m15:59:35.132404 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m15:59:35.133402 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0bde5f17-0adf-48d7-94d3-bf1e67699ba2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E4240B790>]}
+[0m15:59:35.637398 [debug] [MainThread]: 1699: static parser successfully parsed raw\ct_raw_ufcstats_singlefights.sql
+[0m15:59:35.648372 [debug] [MainThread]: 1699: static parser successfully parsed silver\ct_rawtosilver_ufcstats_fighter.sql
+[0m15:59:35.652373 [debug] [MainThread]: 1699: static parser successfully parsed silver\ct_silver_ufcstats_singlefights.sql
+[0m15:59:35.677402 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0bde5f17-0adf-48d7-94d3-bf1e67699ba2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E42BF2610>]}
+[0m15:59:35.682373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0bde5f17-0adf-48d7-94d3-bf1e67699ba2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E42C02E50>]}
+[0m15:59:35.683403 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 316 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m15:59:35.684374 [info ] [MainThread]: 
+[0m15:59:35.685376 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:59:35.686403 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ufcstats'
+[0m15:59:35.696372 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats"
+[0m15:59:35.696372 [debug] [ThreadPool]: On list_ufcstats: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"ufcstats"'
+    
+  
+  
+[0m15:59:35.697372 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:59:35.707373 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:59:35.709373 [debug] [ThreadPool]: On list_ufcstats: Close
+[0m15:59:35.713375 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats"
+[0m15:59:35.714374 [debug] [ThreadPool]: On list_ufcstats: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"ufcstats"'
+    
+  
+  
+[0m15:59:35.714374 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:59:35.723373 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:59:35.725374 [debug] [ThreadPool]: On list_ufcstats: Close
+[0m15:59:35.728373 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ufcstats, now create_ufcstats_main_silver)
+[0m15:59:35.728373 [debug] [ThreadPool]: Creating schema "database: "ufcstats"
+schema: "main_silver"
+"
+[0m15:59:35.732374 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_silver"
+[0m15:59:35.732374 [debug] [ThreadPool]: On create_ufcstats_main_silver: BEGIN
+[0m15:59:35.733373 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:59:35.741373 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:59:35.742372 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_silver"
+[0m15:59:35.742372 [debug] [ThreadPool]: On create_ufcstats_main_silver: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "create_ufcstats_main_silver"} */
+create schema if not exists "ufcstats"."main_silver"
+[0m15:59:35.742372 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:59:35.743372 [debug] [ThreadPool]: On create_ufcstats_main_silver: COMMIT
+[0m15:59:35.744530 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_silver"
+[0m15:59:35.744530 [debug] [ThreadPool]: On create_ufcstats_main_silver: COMMIT
+[0m15:59:35.745537 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:59:35.745537 [debug] [ThreadPool]: On create_ufcstats_main_silver: Close
+[0m15:59:35.748746 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_ufcstats_main_silver, now create_ufcstats_main_raw)
+[0m15:59:35.748746 [debug] [ThreadPool]: Creating schema "database: "ufcstats"
+schema: "main_raw"
+"
+[0m15:59:35.750779 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_raw"
+[0m15:59:35.751776 [debug] [ThreadPool]: On create_ufcstats_main_raw: BEGIN
+[0m15:59:35.751776 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:59:35.759814 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:59:35.760813 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_raw"
+[0m15:59:35.760813 [debug] [ThreadPool]: On create_ufcstats_main_raw: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "create_ufcstats_main_raw"} */
+create schema if not exists "ufcstats"."main_raw"
+[0m15:59:35.761812 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:59:35.761812 [debug] [ThreadPool]: On create_ufcstats_main_raw: COMMIT
+[0m15:59:35.762813 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_raw"
+[0m15:59:35.762813 [debug] [ThreadPool]: On create_ufcstats_main_raw: COMMIT
+[0m15:59:35.763813 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:59:35.763813 [debug] [ThreadPool]: On create_ufcstats_main_raw: Close
+[0m15:59:35.767812 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ufcstats_main_silver'
+[0m15:59:35.771812 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_silver"
+[0m15:59:35.772813 [debug] [ThreadPool]: On list_ufcstats_main_silver: BEGIN
+[0m15:59:35.772813 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:59:35.780855 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:59:35.781855 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_silver"
+[0m15:59:35.781855 [debug] [ThreadPool]: On list_ufcstats_main_silver: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats_main_silver"} */
+select
+      'ufcstats' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_silver'
+    
+    and table_catalog = 'ufcstats'
+    
+  
+[0m15:59:35.796854 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:59:35.801855 [debug] [ThreadPool]: On list_ufcstats_main_silver: ROLLBACK
+[0m15:59:35.802854 [debug] [ThreadPool]: Failed to rollback 'list_ufcstats_main_silver'
+[0m15:59:35.803855 [debug] [ThreadPool]: On list_ufcstats_main_silver: Close
+[0m15:59:35.806828 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ufcstats_main_silver, now list_ufcstats_main_raw)
+[0m15:59:35.809117 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_raw"
+[0m15:59:35.809117 [debug] [ThreadPool]: On list_ufcstats_main_raw: BEGIN
+[0m15:59:35.810116 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:59:35.818146 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:59:35.818146 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_raw"
+[0m15:59:35.819145 [debug] [ThreadPool]: On list_ufcstats_main_raw: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats_main_raw"} */
+select
+      'ufcstats' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_raw'
+    
+    and table_catalog = 'ufcstats'
+    
+  
+[0m15:59:35.834117 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m15:59:35.838115 [debug] [ThreadPool]: On list_ufcstats_main_raw: ROLLBACK
+[0m15:59:35.839116 [debug] [ThreadPool]: Failed to rollback 'list_ufcstats_main_raw'
+[0m15:59:35.839116 [debug] [ThreadPool]: On list_ufcstats_main_raw: Close
+[0m15:59:35.843115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0bde5f17-0adf-48d7-94d3-bf1e67699ba2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E42C57110>]}
+[0m15:59:35.843115 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:59:35.844116 [debug] [MainThread]: On master: BEGIN
+[0m15:59:35.844116 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:59:35.852117 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m15:59:35.853115 [debug] [MainThread]: On master: COMMIT
+[0m15:59:35.853115 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:59:35.854115 [debug] [MainThread]: On master: COMMIT
+[0m15:59:35.854115 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m15:59:35.855116 [debug] [MainThread]: On master: Close
+[0m15:59:35.857117 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:59:35.858117 [info ] [MainThread]: 
+[0m15:59:35.862119 [debug] [Thread-1 (]: Began running node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m15:59:35.863044 [info ] [Thread-1 (]: 1 of 3 START sql table model main_raw.ct_raw_ufcstats_singlefights ............. [RUN]
+[0m15:59:35.864051 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.ufcstats.ct_raw_ufcstats_singlefights'
+[0m15:59:35.864051 [debug] [Thread-1 (]: Began compiling node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m15:59:35.866051 [debug] [Thread-1 (]: Writing injected SQL for node "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:59:35.867050 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_raw_ufcstats_singlefights (compile): 15:59:35.865051 => 15:59:35.867050
+[0m15:59:35.868050 [debug] [Thread-1 (]: Began executing node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m15:59:35.894090 [debug] [Thread-1 (]: Writing runtime sql for node "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:59:35.896090 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:59:35.896090 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: BEGIN
+[0m15:59:35.896090 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:59:35.905090 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:35.905090 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:59:35.906089 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+
+  
+    
+    
+
+    create  table
+      "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights__dbt_tmp"
+  
+    as (
+      WITH F1 AS (
+        SELECT
+            eventname,
+            eventdate,
+            eventlocation,
+            id,
+            weightclass,
+            method,
+            round,
+            time,
+            timeformat,
+            referee,
+            fighter1id fighterid,
+            fighter1 fightername,
+            fighter1nickname fighternickname,
+            fighter1kd fighterkd,
+            fighter1sigstr fightersigstr,
+            fighter1sigstrpct fightersigstrpct,
+            fighter1totalstr fightertotalstr,
+            fighter1td fightertd,
+            fighter1tdpct fightertdpct,
+            fighter1subatt fightersubatt,
+            fighter1rev fighterrev,
+            fighter1ctrl fighterctrl,
+            fighter1head fighterhead,
+            fighter1body fighterbody,
+            fighter1leg fighterleg,
+            fighter1distance fighterdistance,
+            fighter1clinch fighterclinch,
+            fighter1ground fighterground,
+            fighter2id opponentid,
+            winningfighter,
+            perf,
+            sub,
+            fight,
+            ko,
+            judge1,
+            judge1_score,
+            judge2,
+            judge2_score,
+            judge3,
+            judge3_score
+        FROM
+            raw.ufcstatsfighttable)
+    SELECT
+        eventname,
+        eventdate,
+        eventlocation,
+        id,
+        weightclass,
+        method,
+        round,
+        time,
+        timeformat,
+        referee,
+        fighter2id fighterid,
+        fighter2 fightername,
+        fighter2nickname fighternickname,
+        fighter2kd fighterkd,
+        fighter2sigstr fightersigstr,
+        fighter2sigstrpct fightersigstrpct,
+        fighter2totalstr fightertotalstr,
+        fighter2td fightertd,
+        fighter2tdpct fightertdpct,
+        fighter2subatt fightersubatt,
+        fighter2rev fighterrev,
+        fighter2ctrl fighterctrl,
+        fighter2head fighterhead,
+        fighter2body fighterbody,
+        fighter2leg fighterleg,
+        fighter2distance fighterdistance,
+        fighter2clinch fighterclinch,
+        fighter2ground fighterground,
+        fighter1id opponentid,
+        winningfighter,
+        perf,
+        sub,
+        fight,
+        ko,
+        judge1,
+        judge1_score,
+        judge2,
+        judge2_score,
+        judge3,
+        judge3_score
+    FROM
+        raw.ufcstatsfighttable
+    UNION ALL
+    SELECT * FROM F1
+    );
+  
+  
+[0m15:59:36.049088 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.055090 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:59:36.055090 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+alter table "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights" rename to "ct_raw_ufcstats_singlefights__dbt_backup"
+[0m15:59:36.056090 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.058090 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:59:36.058090 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+alter table "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights__dbt_tmp" rename to "ct_raw_ufcstats_singlefights"
+[0m15:59:36.059090 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.075089 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: COMMIT
+[0m15:59:36.075089 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:59:36.076090 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: COMMIT
+[0m15:59:36.227142 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.236134 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m15:59:36.236134 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+drop table if exists "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights__dbt_backup" cascade
+[0m15:59:36.256474 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.257507 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_raw_ufcstats_singlefights (execute): 15:59:35.868050 => 15:59:36.257507
+[0m15:59:36.258507 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: Close
+[0m15:59:36.409730 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0bde5f17-0adf-48d7-94d3-bf1e67699ba2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E42A81B50>]}
+[0m15:59:36.410739 [info ] [Thread-1 (]: 1 of 3 OK created sql table model main_raw.ct_raw_ufcstats_singlefights ........ [[32mOK[0m in 0.55s]
+[0m15:59:36.411732 [debug] [Thread-1 (]: Finished running node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m15:59:36.412719 [debug] [Thread-1 (]: Began running node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m15:59:36.412719 [info ] [Thread-1 (]: 2 of 3 START sql table model main_silver.ct_rawtosilver_ufcstats_fighter ....... [RUN]
+[0m15:59:36.413729 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ufcstats.ct_raw_ufcstats_singlefights, now model.ufcstats.ct_rawtosilver_ufcstats_fighter)
+[0m15:59:36.414701 [debug] [Thread-1 (]: Began compiling node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m15:59:36.416699 [debug] [Thread-1 (]: Writing injected SQL for node "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:59:36.417700 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_rawtosilver_ufcstats_fighter (compile): 15:59:36.414701 => 15:59:36.416699
+[0m15:59:36.417700 [debug] [Thread-1 (]: Began executing node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m15:59:36.420700 [debug] [Thread-1 (]: Writing runtime sql for node "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:59:36.421699 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:59:36.422709 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: BEGIN
+[0m15:59:36.422709 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:59:36.431700 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.432700 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:59:36.433119 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+
+  
+    
+    
+
+    create  table
+      "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter__dbt_tmp"
+  
+    as (
+      WITH record_cte AS (
+            SELECT
+                STR_SPLIT(fighterurl, '/')[5] fighterid,
+                REGEXP_EXTRACT_ALL(record, '\d+') AS record_list
+            FROM
+                raw_ufcstatsfightertable
+        )
+
+
+        SELECT
+            STR_SPLIT(main.fighterurl, '/')[5] AS fighterid,
+            main.fightername,
+            main.fighternickname,
+            rec.record_list[1]::int AS wins,
+            rec.record_list[2]::int AS losses,
+            rec.record_list[3]::int AS draws,
+            IFNULL(rec.record_list[4]::int, 0) AS no_contests,
+            (rec.record_list[1]::int + rec.record_list[2]::int + IFNULL(rec.record_list[3], 0)::int + IFNULL(rec.record_list[4], 0)::int) AS totalfights,
+            CASE
+                WHEN CONTAINS(main.weight, '-') THEN NULL
+                ELSE REGEXP_EXTRACT(TRIM(main.weight), '\d+')::int
+            END AS weightlbs,
+            CASE
+                WHEN
+                    CONTAINS(main.height, '-') THEN NULL
+                ELSE
+                    (STR_SPLIT(main.height, ' ')[1]::int * 12 + STR_SPLIT(main.height, ' ')[2]::int)
+            END AS heightinches,
+            CASE
+                WHEN
+                    CONTAINS(main.reach, '-') THEN NULL
+                ELSE
+                    main.reach::int
+            END AS reach,
+            main.stance,
+            STRPTIME(
+                CASE
+                    WHEN CONTAINS(main.dob, '-') THEN NULL
+                ELSE
+                    main.dob
+                END,                    '%b %d, %Y') AS dob,
+            main.slpm::FLOAT AS slpm,
+            CONCAT('.', REGEXP_EXTRACT(main.stracc, '\d+'))::FLOAT AS  scraped_stracc,
+            main.sapm::FLOAT AS scraped_sapm,
+            CONCAT('.', REGEXP_EXTRACT(main.strdef, '\d+'))::FLOAT AS scraped_strdef,
+            main.tdavg::FLOAT AS scraped_tdavg,
+            CONCAT('.', REGEXP_EXTRACT(main.tdacc, '\d+'))::FLOAT AS scraped_tdacc,
+            CONCAT('.', REGEXP_EXTRACT(main.tddef, '\d+'))::FLOAT AS scraped_tddef,
+            main.subavg::FLOAT AS scraped_subavg
+        FROM
+            raw_ufcstatsfightertable main
+        INNER JOIN
+            record_cte rec ON rec.fighterid = STR_SPLIT(main.fighterurl, '/')[5]
+    );
+  
+  
+[0m15:59:36.448129 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.451154 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:59:36.451154 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+alter table "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter" rename to "ct_rawtosilver_ufcstats_fighter__dbt_backup"
+[0m15:59:36.452155 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.456128 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:59:36.457153 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+alter table "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter__dbt_tmp" rename to "ct_rawtosilver_ufcstats_fighter"
+[0m15:59:36.457153 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.459124 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: COMMIT
+[0m15:59:36.460125 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:59:36.460125 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: COMMIT
+[0m15:59:36.490125 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.492125 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m15:59:36.493125 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+drop table if exists "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter__dbt_backup" cascade
+[0m15:59:36.510124 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.512125 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_rawtosilver_ufcstats_fighter (execute): 15:59:36.418700 => 15:59:36.511125
+[0m15:59:36.512125 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: Close
+[0m15:59:36.630324 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0bde5f17-0adf-48d7-94d3-bf1e67699ba2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E42D1F810>]}
+[0m15:59:36.633325 [info ] [Thread-1 (]: 2 of 3 OK created sql table model main_silver.ct_rawtosilver_ufcstats_fighter .. [[32mOK[0m in 0.22s]
+[0m15:59:36.638281 [debug] [Thread-1 (]: Finished running node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m15:59:36.640318 [debug] [Thread-1 (]: Began running node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m15:59:36.643318 [info ] [Thread-1 (]: 3 of 3 START sql table model main_silver.ct_silver_ufcstats_singlefights ....... [RUN]
+[0m15:59:36.647318 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ufcstats.ct_rawtosilver_ufcstats_fighter, now model.ufcstats.ct_silver_ufcstats_singlefights)
+[0m15:59:36.649286 [debug] [Thread-1 (]: Began compiling node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m15:59:36.655317 [debug] [Thread-1 (]: Writing injected SQL for node "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:59:36.658313 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_silver_ufcstats_singlefights (compile): 15:59:36.651328 => 15:59:36.658313
+[0m15:59:36.660310 [debug] [Thread-1 (]: Began executing node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m15:59:36.667308 [debug] [Thread-1 (]: Writing runtime sql for node "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:59:36.669275 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:59:36.670277 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: BEGIN
+[0m15:59:36.670277 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:59:36.682275 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.683273 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:59:36.683273 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+
+  
+    
+    
+
+    create  table
+      "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights__dbt_tmp"
+  
+    as (
+      WITH round_cte AS (
+        SELECT
+            id,
+            CASE
+                WHEN TIMEFORMAT == 'No Time Limit' THEN NULL
+                ELSE [val::int for val in STR_SPLIT(REPLACE(REPLACE(REGEXP_EXTRACT(timeformat, '\((.*)\)'), '(', ''),')',''), '-')]
+            END AS rnds
+        FROM
+            raw.ufcstats_singlefights
+    )
+
+    SELECT
+        eventname,
+        STRPTIME(eventdate, '%B %d, %Y') AS eventdate,
+        STR_SPLIT(eventlocation, ', ')[1] AS eventcity,
+        STR_SPLIT(eventlocation, ', ')[2] AS eventstate,
+        STR_SPLIT(eventlocation, ', ')[3] AS eventcountry,
+        id as fightid,
+        REPLACE(weightclass, ' Bout', '') weightclass,
+
+        CASE
+            WHEN
+                CONTAINS(weightclass, 'Title') THEN True::BOOLEAN
+            ELSE
+                False::BOOLEAN
+        END AS titlefight,
+        method,
+        round,
+        -- Total rounds in fight
+        LIST_COUNT(rcte.rnds) AS totalrounds,
+        LIST_SUM(rcte.rnds) * 60 AS totaltime,
+        CASE
+            WHEN round = 1 THEN str_split(time, ':')[1]::int * 60 + str_split(time, ':')[2]::int
+            ELSE LIST_SUM(rcte.rnds[1:round::int - 1]) * 60 + str_split(time, ':')[1]::int * 60 + str_split(time, ':')[2]::int
+        END AS time,
+        referee,
+        fightername,
+        fighterid,
+        opponentid,
+        fighternickname,
+        CASE
+            WHEN CONTAINS(fighterkd, '-') THEN NULL
+            ELSE fighterkd::int
+        END AS fighterkd,
+        CASE
+            WHEN CONTAINS(fightersigstr, '-') THEN NULL
+            ELSE STR_SPLIT(fightersigstr, ' of ')[1]::int
+        END AS fightersigstr,
+        CASE
+            WHEN CONTAINS(fightersigstr, '-') THEN NULL
+            ELSE STR_SPLIT(fightersigstr, ' of ')[2]::int
+        END AS fightersigstratt,
+        CASE
+            WHEN CONTAINS(fightersigstrpct, '-') OR fightersigstrpct == '' THEN NULL
+            ELSE REGEXP_EXTRACT(fightersigstrpct, '([0-9]+)')::int / 100
+        END AS fightersigstrpct,
+        CASE
+            WHEN CONTAINS(FIGHTERTOTALSTR, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTOTALSTR, ' of ')[1]::int
+        END AS fightertotalstr,
+        CASE
+            WHEN CONTAINS(FIGHTERTOTALSTR, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTOTALSTR, ' of ')[2]::int
+        END AS fightertotalstratt,
+        CASE
+            WHEN CONTAINS(FIGHTERTD, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTD, ' of ')[1]::int
+        END AS fightertd,
+        CASE
+            WHEN CONTAINS(FIGHTERTD, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTD, ' of ')[2]::int
+        END AS fightertdatt,
+        CASE
+            WHEN CONTAINS(fightertdpct, '-') OR fightertdpct == '' THEN NULL
+            ELSE REGEXP_EXTRACT(fightertdpct, '([0-9]+)')::int / 100
+        END AS fightertdpct,
+        CASE
+            WHEN CONTAINS(fightersubatt, '-') THEN NULL
+            ELSE fightersubatt::int
+        END AS fightersubatt,
+        CASE
+            WHEN CONTAINS(fighterrev, '-') THEN NULL
+            ELSE fighterrev::int
+        END AS fighterrev,
+        CASE
+            WHEN CONTAINS(fighterctrl, '-') THEN NULL
+            ELSE STR_SPLIT(fighterctrl, ':')[1]::int * 60 + STR_SPLIT(fighterctrl, ':')[2]::int
+        END AS fighterctrl,
+        CASE
+            WHEN CONTAINS(fighterhead, '-') THEN NULL
+            ELSE STR_SPLIT(fighterhead, ' of ')[1]::int
+        END AS fighterhead,
+        CASE
+            WHEN CONTAINS(fighterhead, '-') THEN NULL
+            ELSE STR_SPLIT(fighterhead, ' of ')[2]::int
+        END AS fighterheadatt,
+        CASE
+            WHEN CONTAINS(fighterbody, '-') THEN NULL
+            ELSE STR_SPLIT(fighterbody, ' of ')[1]::int
+        END AS fighterbody,
+        CASE
+            WHEN CONTAINS(fighterbody, '-') THEN NULL
+            ELSE STR_SPLIT(fighterbody, ' of ')[2]::int
+        END AS fighterbodyatt,
+        CASE
+            WHEN CONTAINS(fighterleg, '-') THEN NULL
+            ELSE STR_SPLIT(fighterleg, ' of ')[1]::int
+        END AS fighterleg,
+        CASE
+            WHEN CONTAINS(fighterleg, '-') THEN NULL
+            ELSE STR_SPLIT(fighterleg, ' of ')[2]::int
+        END AS fighterlegatt,
+        CASE
+            WHEN CONTAINS(fighterdistance, '-') THEN NULL
+            ELSE STR_SPLIT(fighterdistance, ' of ')[1]::int
+        END AS fighterdistance,
+        CASE
+            WHEN CONTAINS(fighterdistance, '-') THEN NULL
+            ELSE STR_SPLIT(fighterdistance, ' of ')[2]::int
+        END AS fighterdistanceatt,
+        CASE
+            WHEN CONTAINS(fighterclinch, '-') THEN NULL
+            ELSE STR_SPLIT(fighterclinch, ' of ')[1]::int
+        END AS fighterclinch,
+        CASE
+            WHEN CONTAINS(fighterclinch, '-') THEN NULL
+            ELSE STR_SPLIT(fighterclinch, ' of ')[2]::int
+        END AS fighterclinchatt,
+        CASE
+            WHEN CONTAINS(fighterground, '-') THEN NULL
+            ELSE STR_SPLIT(fighterground, ' of ')[1]::int
+        END AS fighterground,
+        CASE
+            WHEN CONTAINS(fighterground, '-') THEN NULL
+            ELSE STR_SPLIT(fighterground, ' of ')[2]::int
+        END AS fightergroundatt,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS winner,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] AND perf != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS performancebonus,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] AND sub != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS submissionbonus,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] AND ko != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS knockoutbonus,
+        CASE
+            WHEN fight != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS fightofthenight,
+        judge1,
+        CASE
+            WHEN judge1_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge1_score, ' - ')[1]::int
+        END AS judge1fighter1score,
+        CASE
+            WHEN judge1_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge1_score, ' - ')[2]::int
+        END AS judge1fighter2score,
+        judge2,
+        CASE
+            WHEN judge2_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge2_score, ' - ')[1]::int
+        END AS judge2fighter1score,
+        CASE
+            WHEN judge2_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge2_score, ' - ')[2]::int
+        END AS judge2fighter2score,
+        judge3,
+        CASE
+            WHEN judge3_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge3_score, ' - ')[1]::int
+        END AS judge3fighter1score,
+        CASE
+            WHEN judge3_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge3_score, ' - ')[2]::int
+        END AS judge3fighter2score
+    FROM
+        raw.ufcstats_singlefights main
+    INNER JOIN round_cte rcte USING (id)
+    );
+  
+  
+[0m15:59:36.878298 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.881305 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:59:36.881305 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+alter table "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights" rename to "ct_silver_ufcstats_singlefights__dbt_backup"
+[0m15:59:36.882305 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.884304 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:59:36.885306 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+alter table "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights__dbt_tmp" rename to "ct_silver_ufcstats_singlefights"
+[0m15:59:36.886304 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:36.887304 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: COMMIT
+[0m15:59:36.888305 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:59:36.888305 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: COMMIT
+[0m15:59:37.172274 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:37.175246 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m15:59:37.175246 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+drop table if exists "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights__dbt_backup" cascade
+[0m15:59:37.198341 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m15:59:37.200349 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_silver_ufcstats_singlefights (execute): 15:59:36.661314 => 15:59:37.199349
+[0m15:59:37.200349 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: Close
+[0m15:59:37.419447 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0bde5f17-0adf-48d7-94d3-bf1e67699ba2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E42D01710>]}
+[0m15:59:37.419447 [info ] [Thread-1 (]: 3 of 3 OK created sql table model main_silver.ct_silver_ufcstats_singlefights .. [[32mOK[0m in 0.77s]
+[0m15:59:37.420558 [debug] [Thread-1 (]: Finished running node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m15:59:37.422565 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:59:37.422565 [debug] [MainThread]: On master: BEGIN
+[0m15:59:37.422565 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:59:37.431564 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m15:59:37.431564 [debug] [MainThread]: On master: COMMIT
+[0m15:59:37.432563 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:59:37.432563 [debug] [MainThread]: On master: COMMIT
+[0m15:59:37.433563 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m15:59:37.433563 [debug] [MainThread]: On master: Close
+[0m15:59:37.436564 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:59:37.437563 [debug] [MainThread]: Connection 'create_ufcstats_main_raw' was properly closed.
+[0m15:59:37.437563 [debug] [MainThread]: Connection 'list_ufcstats_main_raw' was properly closed.
+[0m15:59:37.437563 [debug] [MainThread]: Connection 'model.ufcstats.ct_silver_ufcstats_singlefights' was properly closed.
+[0m15:59:37.438563 [info ] [MainThread]: 
+[0m15:59:37.438563 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 1.75 seconds (1.75s).
+[0m15:59:37.440563 [debug] [MainThread]: Command end result
+[0m15:59:37.445563 [info ] [MainThread]: 
+[0m15:59:37.446564 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:59:37.446564 [info ] [MainThread]: 
+[0m15:59:37.447563 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m15:59:37.448563 [debug] [MainThread]: Command `dbt build` succeeded at 15:59:37.448563 after 2.43 seconds
+[0m15:59:37.449564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E420EBE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E3C0AD6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023E3C09AC50>]}
+[0m15:59:37.449564 [debug] [MainThread]: Flushing usage events
+[0m16:00:33.621290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B502EA85D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B502E91010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B502EB9D90>]}
+
+
+============================== 16:00:33.625289 | d7034bbb-4100-4e3e-a503-c2fc3102d138 ==============================
+[0m16:00:33.625289 [info ] [MainThread]: Running with dbt=1.5.2
+[0m16:00:33.626290 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:00:33.688292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd7034bbb-4100-4e3e-a503-c2fc3102d138', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5037F24D0>]}
+[0m16:00:33.698291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd7034bbb-4100-4e3e-a503-c2fc3102d138', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B502EB9810>]}
+[0m16:00:33.699290 [info ] [MainThread]: Registered adapter: duckdb=1.5.2
+[0m16:00:33.708290 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m16:00:33.769290 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:00:33.769290 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:00:33.774290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd7034bbb-4100-4e3e-a503-c2fc3102d138', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B502F398D0>]}
+[0m16:00:33.779290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd7034bbb-4100-4e3e-a503-c2fc3102d138', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5038A8D50>]}
+[0m16:00:33.780290 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 316 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:00:33.781291 [info ] [MainThread]: 
+[0m16:00:33.782290 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m16:00:33.783290 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ufcstats'
+[0m16:00:33.793289 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats"
+[0m16:00:33.793289 [debug] [ThreadPool]: On list_ufcstats: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"ufcstats"'
+    
+  
+  
+[0m16:00:33.794290 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:00:33.805289 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:00:33.806290 [debug] [ThreadPool]: On list_ufcstats: Close
+[0m16:00:33.810289 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats"
+[0m16:00:33.811289 [debug] [ThreadPool]: On list_ufcstats: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"ufcstats"'
+    
+  
+  
+[0m16:00:33.811289 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:00:33.820289 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:00:33.821290 [debug] [ThreadPool]: On list_ufcstats: Close
+[0m16:00:33.824290 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ufcstats, now create_ufcstats_main_silver)
+[0m16:00:33.824290 [debug] [ThreadPool]: Creating schema "database: "ufcstats"
+schema: "main_silver"
+"
+[0m16:00:33.828291 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_silver"
+[0m16:00:33.829289 [debug] [ThreadPool]: On create_ufcstats_main_silver: BEGIN
+[0m16:00:33.829289 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:00:33.837319 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:00:33.837319 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_silver"
+[0m16:00:33.838315 [debug] [ThreadPool]: On create_ufcstats_main_silver: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "create_ufcstats_main_silver"} */
+create schema if not exists "ufcstats"."main_silver"
+[0m16:00:33.838315 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:00:33.839315 [debug] [ThreadPool]: On create_ufcstats_main_silver: COMMIT
+[0m16:00:33.840317 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_silver"
+[0m16:00:33.840317 [debug] [ThreadPool]: On create_ufcstats_main_silver: COMMIT
+[0m16:00:33.841319 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:00:33.841319 [debug] [ThreadPool]: On create_ufcstats_main_silver: Close
+[0m16:00:33.844319 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_ufcstats_main_silver, now create_ufcstats_main_raw)
+[0m16:00:33.845323 [debug] [ThreadPool]: Creating schema "database: "ufcstats"
+schema: "main_raw"
+"
+[0m16:00:33.846320 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_raw"
+[0m16:00:33.847319 [debug] [ThreadPool]: On create_ufcstats_main_raw: BEGIN
+[0m16:00:33.847319 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:00:33.855325 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:00:33.855325 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_raw"
+[0m16:00:33.856317 [debug] [ThreadPool]: On create_ufcstats_main_raw: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "create_ufcstats_main_raw"} */
+create schema if not exists "ufcstats"."main_raw"
+[0m16:00:33.856317 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:00:33.857327 [debug] [ThreadPool]: On create_ufcstats_main_raw: COMMIT
+[0m16:00:33.858319 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_raw"
+[0m16:00:33.858319 [debug] [ThreadPool]: On create_ufcstats_main_raw: COMMIT
+[0m16:00:33.859320 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:00:33.859320 [debug] [ThreadPool]: On create_ufcstats_main_raw: Close
+[0m16:00:33.863182 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ufcstats_main_silver'
+[0m16:00:33.868212 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_silver"
+[0m16:00:33.868212 [debug] [ThreadPool]: On list_ufcstats_main_silver: BEGIN
+[0m16:00:33.869224 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:00:33.877188 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:00:33.878188 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_silver"
+[0m16:00:33.878188 [debug] [ThreadPool]: On list_ufcstats_main_silver: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats_main_silver"} */
+select
+      'ufcstats' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_silver'
+    
+    and table_catalog = 'ufcstats'
+    
+  
+[0m16:00:33.893249 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:00:33.898249 [debug] [ThreadPool]: On list_ufcstats_main_silver: ROLLBACK
+[0m16:00:33.899243 [debug] [ThreadPool]: Failed to rollback 'list_ufcstats_main_silver'
+[0m16:00:33.899243 [debug] [ThreadPool]: On list_ufcstats_main_silver: Close
+[0m16:00:33.903035 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ufcstats_main_silver, now list_ufcstats_main_raw)
+[0m16:00:33.905035 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_raw"
+[0m16:00:33.906036 [debug] [ThreadPool]: On list_ufcstats_main_raw: BEGIN
+[0m16:00:33.906036 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:00:33.914078 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:00:33.915078 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_raw"
+[0m16:00:33.915078 [debug] [ThreadPool]: On list_ufcstats_main_raw: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats_main_raw"} */
+select
+      'ufcstats' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_raw'
+    
+    and table_catalog = 'ufcstats'
+    
+  
+[0m16:00:33.930077 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:00:33.935078 [debug] [ThreadPool]: On list_ufcstats_main_raw: ROLLBACK
+[0m16:00:33.935078 [debug] [ThreadPool]: Failed to rollback 'list_ufcstats_main_raw'
+[0m16:00:33.936078 [debug] [ThreadPool]: On list_ufcstats_main_raw: Close
+[0m16:00:33.940078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd7034bbb-4100-4e3e-a503-c2fc3102d138', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B502631F50>]}
+[0m16:00:33.940078 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:00:33.940078 [debug] [MainThread]: On master: BEGIN
+[0m16:00:33.941107 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:00:33.949078 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m16:00:33.950077 [debug] [MainThread]: On master: COMMIT
+[0m16:00:33.950077 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:00:33.950077 [debug] [MainThread]: On master: COMMIT
+[0m16:00:33.951078 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m16:00:33.951078 [debug] [MainThread]: On master: Close
+[0m16:00:33.954077 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:00:33.955107 [info ] [MainThread]: 
+[0m16:00:33.959078 [debug] [Thread-1 (]: Began running node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m16:00:33.960107 [info ] [Thread-1 (]: 1 of 3 START sql table model main_raw.ct_raw_ufcstats_singlefights ............. [RUN]
+[0m16:00:33.961105 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.ufcstats.ct_raw_ufcstats_singlefights'
+[0m16:00:33.961105 [debug] [Thread-1 (]: Began compiling node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m16:00:33.963108 [debug] [Thread-1 (]: Writing injected SQL for node "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:00:33.964107 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_raw_ufcstats_singlefights (compile): 16:00:33.961105 => 16:00:33.964107
+[0m16:00:33.964107 [debug] [Thread-1 (]: Began executing node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m16:00:33.991080 [debug] [Thread-1 (]: Writing runtime sql for node "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:00:33.992080 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:00:33.993080 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: BEGIN
+[0m16:00:33.993080 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:00:34.002080 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.002080 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:00:34.003080 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+
+  
+    
+    
+
+    create  table
+      "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights__dbt_tmp"
+  
+    as (
+      WITH F1 AS (
+        SELECT
+            eventname,
+            eventdate,
+            eventlocation,
+            id,
+            weightclass,
+            method,
+            round,
+            time,
+            timeformat,
+            referee,
+            fighter1id fighterid,
+            fighter1 fightername,
+            fighter1nickname fighternickname,
+            fighter1kd fighterkd,
+            fighter1sigstr fightersigstr,
+            fighter1sigstrpct fightersigstrpct,
+            fighter1totalstr fightertotalstr,
+            fighter1td fightertd,
+            fighter1tdpct fightertdpct,
+            fighter1subatt fightersubatt,
+            fighter1rev fighterrev,
+            fighter1ctrl fighterctrl,
+            fighter1head fighterhead,
+            fighter1body fighterbody,
+            fighter1leg fighterleg,
+            fighter1distance fighterdistance,
+            fighter1clinch fighterclinch,
+            fighter1ground fighterground,
+            fighter2id opponentid,
+            winningfighter,
+            perf,
+            sub,
+            fight,
+            ko,
+            judge1,
+            judge1_score,
+            judge2,
+            judge2_score,
+            judge3,
+            judge3_score
+        FROM
+            raw.ufcstatsfighttable)
+    SELECT
+        eventname,
+        eventdate,
+        eventlocation,
+        id,
+        weightclass,
+        method,
+        round,
+        time,
+        timeformat,
+        referee,
+        fighter2id fighterid,
+        fighter2 fightername,
+        fighter2nickname fighternickname,
+        fighter2kd fighterkd,
+        fighter2sigstr fightersigstr,
+        fighter2sigstrpct fightersigstrpct,
+        fighter2totalstr fightertotalstr,
+        fighter2td fightertd,
+        fighter2tdpct fightertdpct,
+        fighter2subatt fightersubatt,
+        fighter2rev fighterrev,
+        fighter2ctrl fighterctrl,
+        fighter2head fighterhead,
+        fighter2body fighterbody,
+        fighter2leg fighterleg,
+        fighter2distance fighterdistance,
+        fighter2clinch fighterclinch,
+        fighter2ground fighterground,
+        fighter1id opponentid,
+        winningfighter,
+        perf,
+        sub,
+        fight,
+        ko,
+        judge1,
+        judge1_score,
+        judge2,
+        judge2_score,
+        judge3,
+        judge3_score
+    FROM
+        raw.ufcstatsfighttable
+    UNION ALL
+    SELECT * FROM F1
+    );
+  
+  
+[0m16:00:34.145079 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.150080 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:00:34.151080 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+alter table "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights" rename to "ct_raw_ufcstats_singlefights__dbt_backup"
+[0m16:00:34.152080 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.154080 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:00:34.154080 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+alter table "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights__dbt_tmp" rename to "ct_raw_ufcstats_singlefights"
+[0m16:00:34.155080 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.171080 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: COMMIT
+[0m16:00:34.171080 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:00:34.172080 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: COMMIT
+[0m16:00:34.355396 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.364374 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:00:34.364374 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+drop table if exists "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights__dbt_backup" cascade
+[0m16:00:34.393888 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.395846 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_raw_ufcstats_singlefights (execute): 16:00:33.965107 => 16:00:34.395846
+[0m16:00:34.396844 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: Close
+[0m16:00:34.552209 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7034bbb-4100-4e3e-a503-c2fc3102d138', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B5037C1750>]}
+[0m16:00:34.553181 [info ] [Thread-1 (]: 1 of 3 OK created sql table model main_raw.ct_raw_ufcstats_singlefights ........ [[32mOK[0m in 0.59s]
+[0m16:00:34.554186 [debug] [Thread-1 (]: Finished running node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m16:00:34.554186 [debug] [Thread-1 (]: Began running node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m16:00:34.555149 [info ] [Thread-1 (]: 2 of 3 START sql table model main_silver.ct_rawtosilver_ufcstats_fighter ....... [RUN]
+[0m16:00:34.556147 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ufcstats.ct_raw_ufcstats_singlefights, now model.ufcstats.ct_rawtosilver_ufcstats_fighter)
+[0m16:00:34.556147 [debug] [Thread-1 (]: Began compiling node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m16:00:34.558149 [debug] [Thread-1 (]: Writing injected SQL for node "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:00:34.559149 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_rawtosilver_ufcstats_fighter (compile): 16:00:34.557147 => 16:00:34.559149
+[0m16:00:34.559149 [debug] [Thread-1 (]: Began executing node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m16:00:34.563146 [debug] [Thread-1 (]: Writing runtime sql for node "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:00:34.564147 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:00:34.564147 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: BEGIN
+[0m16:00:34.565147 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:00:34.573160 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.573160 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:00:34.574160 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+
+  
+    
+    
+
+    create  table
+      "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter__dbt_tmp"
+  
+    as (
+      WITH record_cte AS (
+            SELECT
+                STR_SPLIT(fighterurl, '/')[5] fighterid,
+                REGEXP_EXTRACT_ALL(record, '\d+') AS record_list
+            FROM
+                raw_ufcstatsfightertable
+        )
+
+
+        SELECT
+            STR_SPLIT(main.fighterurl, '/')[5] AS fighterid,
+            main.fightername,
+            main.fighternickname,
+            rec.record_list[1]::int AS wins,
+            rec.record_list[2]::int AS losses,
+            rec.record_list[3]::int AS draws,
+            IFNULL(rec.record_list[4]::int, 0) AS no_contests,
+            (rec.record_list[1]::int + rec.record_list[2]::int + IFNULL(rec.record_list[3], 0)::int + IFNULL(rec.record_list[4], 0)::int) AS totalfights,
+            CASE
+                WHEN CONTAINS(main.weight, '-') THEN NULL
+                ELSE REGEXP_EXTRACT(TRIM(main.weight), '\d+')::int
+            END AS weightlbs,
+            CASE
+                WHEN
+                    CONTAINS(main.height, '-') THEN NULL
+                ELSE
+                    (STR_SPLIT(main.height, ' ')[1]::int * 12 + STR_SPLIT(main.height, ' ')[2]::int)
+            END AS heightinches,
+            CASE
+                WHEN
+                    CONTAINS(main.reach, '-') THEN NULL
+                ELSE
+                    main.reach::int
+            END AS reach,
+            main.stance,
+            STRPTIME(
+                CASE
+                    WHEN CONTAINS(main.dob, '-') THEN NULL
+                ELSE
+                    main.dob
+                END,                    '%b %d, %Y') AS dob,
+            main.slpm::FLOAT AS slpm,
+            CONCAT('.', REGEXP_EXTRACT(main.stracc, '\d+'))::FLOAT AS  scraped_stracc,
+            main.sapm::FLOAT AS scraped_sapm,
+            CONCAT('.', REGEXP_EXTRACT(main.strdef, '\d+'))::FLOAT AS scraped_strdef,
+            main.tdavg::FLOAT AS scraped_tdavg,
+            CONCAT('.', REGEXP_EXTRACT(main.tdacc, '\d+'))::FLOAT AS scraped_tdacc,
+            CONCAT('.', REGEXP_EXTRACT(main.tddef, '\d+'))::FLOAT AS scraped_tddef,
+            main.subavg::FLOAT AS scraped_subavg
+        FROM
+            raw_ufcstatsfightertable main
+        INNER JOIN
+            record_cte rec ON rec.fighterid = STR_SPLIT(main.fighterurl, '/')[5]
+    );
+  
+  
+[0m16:00:34.589164 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.591164 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:00:34.592163 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+alter table "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter" rename to "ct_rawtosilver_ufcstats_fighter__dbt_backup"
+[0m16:00:34.593164 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.596163 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:00:34.596163 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+alter table "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter__dbt_tmp" rename to "ct_rawtosilver_ufcstats_fighter"
+[0m16:00:34.597163 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.599211 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: COMMIT
+[0m16:00:34.599211 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:00:34.600210 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: COMMIT
+[0m16:00:34.637209 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.640209 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:00:34.641209 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+drop table if exists "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter__dbt_backup" cascade
+[0m16:00:34.655280 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.657311 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_rawtosilver_ufcstats_fighter (execute): 16:00:34.560148 => 16:00:34.656287
+[0m16:00:34.657311 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: Close
+[0m16:00:34.765491 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7034bbb-4100-4e3e-a503-c2fc3102d138', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B502F1E450>]}
+[0m16:00:34.768483 [info ] [Thread-1 (]: 2 of 3 OK created sql table model main_silver.ct_rawtosilver_ufcstats_fighter .. [[32mOK[0m in 0.21s]
+[0m16:00:34.773488 [debug] [Thread-1 (]: Finished running node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m16:00:34.776457 [debug] [Thread-1 (]: Began running node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m16:00:34.777456 [info ] [Thread-1 (]: 3 of 3 START sql table model main_silver.ct_silver_ufcstats_singlefights ....... [RUN]
+[0m16:00:34.778433 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ufcstats.ct_rawtosilver_ufcstats_fighter, now model.ufcstats.ct_silver_ufcstats_singlefights)
+[0m16:00:34.779431 [debug] [Thread-1 (]: Began compiling node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m16:00:34.780432 [debug] [Thread-1 (]: Writing injected SQL for node "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:00:34.781432 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_silver_ufcstats_singlefights (compile): 16:00:34.779431 => 16:00:34.781432
+[0m16:00:34.782432 [debug] [Thread-1 (]: Began executing node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m16:00:34.785432 [debug] [Thread-1 (]: Writing runtime sql for node "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:00:34.786433 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:00:34.787432 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: BEGIN
+[0m16:00:34.787432 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:00:34.796433 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.797432 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:00:34.797432 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+
+  
+    
+    
+
+    create  table
+      "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights__dbt_tmp"
+  
+    as (
+      WITH round_cte AS (
+        SELECT
+            id,
+            CASE
+                WHEN TIMEFORMAT == 'No Time Limit' THEN NULL
+                ELSE [val::int for val in STR_SPLIT(REPLACE(REPLACE(REGEXP_EXTRACT(timeformat, '\((.*)\)'), '(', ''),')',''), '-')]
+            END AS rnds
+        FROM
+            raw.ufcstats_singlefights
+    )
+
+    SELECT
+        eventname,
+        STRPTIME(eventdate, '%B %d, %Y') AS eventdate,
+        STR_SPLIT(eventlocation, ', ')[1] AS eventcity,
+        STR_SPLIT(eventlocation, ', ')[2] AS eventstate,
+        STR_SPLIT(eventlocation, ', ')[3] AS eventcountry,
+        id as fightid,
+        REPLACE(weightclass, ' Bout', '') weightclass,
+
+        CASE
+            WHEN
+                CONTAINS(weightclass, 'Title') THEN True::BOOLEAN
+            ELSE
+                False::BOOLEAN
+        END AS titlefight,
+        method,
+        round,
+        -- Total rounds in fight
+        LIST_COUNT(rcte.rnds) AS totalrounds,
+        LIST_SUM(rcte.rnds) * 60 AS totaltime,
+        CASE
+            WHEN round = 1 THEN str_split(time, ':')[1]::int * 60 + str_split(time, ':')[2]::int
+            ELSE LIST_SUM(rcte.rnds[1:round::int - 1]) * 60 + str_split(time, ':')[1]::int * 60 + str_split(time, ':')[2]::int
+        END AS time,
+        referee,
+        fightername,
+        fighterid,
+        opponentid,
+        fighternickname,
+        CASE
+            WHEN CONTAINS(fighterkd, '-') THEN NULL
+            ELSE fighterkd::int
+        END AS fighterkd,
+        CASE
+            WHEN CONTAINS(fightersigstr, '-') THEN NULL
+            ELSE STR_SPLIT(fightersigstr, ' of ')[1]::int
+        END AS fightersigstr,
+        CASE
+            WHEN CONTAINS(fightersigstr, '-') THEN NULL
+            ELSE STR_SPLIT(fightersigstr, ' of ')[2]::int
+        END AS fightersigstratt,
+        CASE
+            WHEN CONTAINS(fightersigstrpct, '-') OR fightersigstrpct == '' THEN NULL
+            ELSE REGEXP_EXTRACT(fightersigstrpct, '([0-9]+)')::int / 100
+        END AS fightersigstrpct,
+        CASE
+            WHEN CONTAINS(FIGHTERTOTALSTR, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTOTALSTR, ' of ')[1]::int
+        END AS fightertotalstr,
+        CASE
+            WHEN CONTAINS(FIGHTERTOTALSTR, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTOTALSTR, ' of ')[2]::int
+        END AS fightertotalstratt,
+        CASE
+            WHEN CONTAINS(FIGHTERTD, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTD, ' of ')[1]::int
+        END AS fightertd,
+        CASE
+            WHEN CONTAINS(FIGHTERTD, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTD, ' of ')[2]::int
+        END AS fightertdatt,
+        CASE
+            WHEN CONTAINS(fightertdpct, '-') OR fightertdpct == '' THEN NULL
+            ELSE REGEXP_EXTRACT(fightertdpct, '([0-9]+)')::int / 100
+        END AS fightertdpct,
+        CASE
+            WHEN CONTAINS(fightersubatt, '-') THEN NULL
+            ELSE fightersubatt::int
+        END AS fightersubatt,
+        CASE
+            WHEN CONTAINS(fighterrev, '-') THEN NULL
+            ELSE fighterrev::int
+        END AS fighterrev,
+        CASE
+            WHEN CONTAINS(fighterctrl, '-') THEN NULL
+            ELSE STR_SPLIT(fighterctrl, ':')[1]::int * 60 + STR_SPLIT(fighterctrl, ':')[2]::int
+        END AS fighterctrl,
+        CASE
+            WHEN CONTAINS(fighterhead, '-') THEN NULL
+            ELSE STR_SPLIT(fighterhead, ' of ')[1]::int
+        END AS fighterhead,
+        CASE
+            WHEN CONTAINS(fighterhead, '-') THEN NULL
+            ELSE STR_SPLIT(fighterhead, ' of ')[2]::int
+        END AS fighterheadatt,
+        CASE
+            WHEN CONTAINS(fighterbody, '-') THEN NULL
+            ELSE STR_SPLIT(fighterbody, ' of ')[1]::int
+        END AS fighterbody,
+        CASE
+            WHEN CONTAINS(fighterbody, '-') THEN NULL
+            ELSE STR_SPLIT(fighterbody, ' of ')[2]::int
+        END AS fighterbodyatt,
+        CASE
+            WHEN CONTAINS(fighterleg, '-') THEN NULL
+            ELSE STR_SPLIT(fighterleg, ' of ')[1]::int
+        END AS fighterleg,
+        CASE
+            WHEN CONTAINS(fighterleg, '-') THEN NULL
+            ELSE STR_SPLIT(fighterleg, ' of ')[2]::int
+        END AS fighterlegatt,
+        CASE
+            WHEN CONTAINS(fighterdistance, '-') THEN NULL
+            ELSE STR_SPLIT(fighterdistance, ' of ')[1]::int
+        END AS fighterdistance,
+        CASE
+            WHEN CONTAINS(fighterdistance, '-') THEN NULL
+            ELSE STR_SPLIT(fighterdistance, ' of ')[2]::int
+        END AS fighterdistanceatt,
+        CASE
+            WHEN CONTAINS(fighterclinch, '-') THEN NULL
+            ELSE STR_SPLIT(fighterclinch, ' of ')[1]::int
+        END AS fighterclinch,
+        CASE
+            WHEN CONTAINS(fighterclinch, '-') THEN NULL
+            ELSE STR_SPLIT(fighterclinch, ' of ')[2]::int
+        END AS fighterclinchatt,
+        CASE
+            WHEN CONTAINS(fighterground, '-') THEN NULL
+            ELSE STR_SPLIT(fighterground, ' of ')[1]::int
+        END AS fighterground,
+        CASE
+            WHEN CONTAINS(fighterground, '-') THEN NULL
+            ELSE STR_SPLIT(fighterground, ' of ')[2]::int
+        END AS fightergroundatt,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS winner,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] AND perf != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS performancebonus,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] AND sub != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS submissionbonus,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] AND ko != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS knockoutbonus,
+        CASE
+            WHEN fight != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS fightofthenight,
+        judge1,
+        CASE
+            WHEN judge1_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge1_score, ' - ')[1]::int
+        END AS judge1fighter1score,
+        CASE
+            WHEN judge1_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge1_score, ' - ')[2]::int
+        END AS judge1fighter2score,
+        judge2,
+        CASE
+            WHEN judge2_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge2_score, ' - ')[1]::int
+        END AS judge2fighter1score,
+        CASE
+            WHEN judge2_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge2_score, ' - ')[2]::int
+        END AS judge2fighter2score,
+        judge3,
+        CASE
+            WHEN judge3_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge3_score, ' - ')[1]::int
+        END AS judge3fighter1score,
+        CASE
+            WHEN judge3_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge3_score, ' - ')[2]::int
+        END AS judge3fighter2score
+    FROM
+        raw.ufcstats_singlefights main
+    INNER JOIN round_cte rcte USING (id)
+    );
+  
+  
+[0m16:00:34.986461 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.989433 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:00:34.990462 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+alter table "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights" rename to "ct_silver_ufcstats_singlefights__dbt_backup"
+[0m16:00:34.990462 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.993462 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:00:34.993462 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+alter table "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights__dbt_tmp" rename to "ct_silver_ufcstats_singlefights"
+[0m16:00:34.994462 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:34.996445 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: COMMIT
+[0m16:00:34.996445 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:00:34.997468 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: COMMIT
+[0m16:00:35.161646 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:35.163647 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:00:35.164649 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+drop table if exists "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights__dbt_backup" cascade
+[0m16:00:35.189134 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:00:35.191145 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_silver_ufcstats_singlefights (execute): 16:00:34.782432 => 16:00:35.191145
+[0m16:00:35.192144 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: Close
+[0m16:00:35.408112 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7034bbb-4100-4e3e-a503-c2fc3102d138', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B503A706D0>]}
+[0m16:00:35.409112 [info ] [Thread-1 (]: 3 of 3 OK created sql table model main_silver.ct_silver_ufcstats_singlefights .. [[32mOK[0m in 0.63s]
+[0m16:00:35.410113 [debug] [Thread-1 (]: Finished running node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m16:00:35.411114 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:00:35.412112 [debug] [MainThread]: On master: BEGIN
+[0m16:00:35.412112 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:00:35.421160 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m16:00:35.421160 [debug] [MainThread]: On master: COMMIT
+[0m16:00:35.422190 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:00:35.422190 [debug] [MainThread]: On master: COMMIT
+[0m16:00:35.423189 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m16:00:35.423189 [debug] [MainThread]: On master: Close
+[0m16:00:35.425189 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:00:35.426189 [debug] [MainThread]: Connection 'create_ufcstats_main_raw' was properly closed.
+[0m16:00:35.426189 [debug] [MainThread]: Connection 'list_ufcstats_main_raw' was properly closed.
+[0m16:00:35.427161 [debug] [MainThread]: Connection 'model.ufcstats.ct_silver_ufcstats_singlefights' was properly closed.
+[0m16:00:35.427161 [info ] [MainThread]: 
+[0m16:00:35.428189 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 1.64 seconds (1.64s).
+[0m16:00:35.429192 [debug] [MainThread]: Command end result
+[0m16:00:35.434161 [info ] [MainThread]: 
+[0m16:00:35.435160 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:00:35.435160 [info ] [MainThread]: 
+[0m16:00:35.436182 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m16:00:35.437193 [debug] [MainThread]: Command `dbt build` succeeded at 16:00:35.437193 after 1.83 seconds
+[0m16:00:35.437193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B502E8BFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B50327B3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B57CB18310>]}
+[0m16:00:35.438189 [debug] [MainThread]: Flushing usage events
+[0m16:03:13.048578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F3FFFCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F3F70CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F489B890>]}
+
+
+============================== 16:03:13.051577 | 4c36a94d-84d0-4cec-8884-447d62bde492 ==============================
+[0m16:03:13.051577 [info ] [MainThread]: Running with dbt=1.5.2
+[0m16:03:13.052577 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project', 'log_path': 'D:\\Documents\\DataScience\\ProjectEnvironments\\UFC_DE_Project\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:03:13.114578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4c36a94d-84d0-4cec-8884-447d62bde492', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F46A2A90>]}
+[0m16:03:13.124578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4c36a94d-84d0-4cec-8884-447d62bde492', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F4281610>]}
+[0m16:03:13.125578 [info ] [MainThread]: Registered adapter: duckdb=1.5.2
+[0m16:03:13.135578 [debug] [MainThread]: checksum: 2435fa7be9fcfa6ffe15da8f202ddc09867bf7d6308330064299ccb85c8646b5, vars: {}, profile: , target: , version: 1.5.2
+[0m16:03:13.141577 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:03:13.142578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4c36a94d-84d0-4cec-8884-447d62bde492', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F3F77650>]}
+[0m16:03:13.649582 [debug] [MainThread]: 1699: static parser successfully parsed raw\ct_raw_ufcstats_singlefights.sql
+[0m16:03:13.659578 [debug] [MainThread]: 1699: static parser successfully parsed silver\ct_rawtosilver_ufcstats_fighter.sql
+[0m16:03:13.663578 [debug] [MainThread]: 1699: static parser successfully parsed silver\ct_silver_ufcstats_singlefights.sql
+[0m16:03:13.689577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4c36a94d-84d0-4cec-8884-447d62bde492', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F48EDFD0>]}
+[0m16:03:13.694578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4c36a94d-84d0-4cec-8884-447d62bde492', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F4994990>]}
+[0m16:03:13.695578 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 316 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:03:13.696578 [info ] [MainThread]: 
+[0m16:03:13.697579 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m16:03:13.699578 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ufcstats'
+[0m16:03:13.708577 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats"
+[0m16:03:13.709577 [debug] [ThreadPool]: On list_ufcstats: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"ufcstats"'
+    
+  
+  
+[0m16:03:13.709577 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:03:13.720580 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:03:13.721579 [debug] [ThreadPool]: On list_ufcstats: Close
+[0m16:03:13.726577 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats"
+[0m16:03:13.726577 [debug] [ThreadPool]: On list_ufcstats: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"ufcstats"'
+    
+  
+  
+[0m16:03:13.727579 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:03:13.735578 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:03:13.737579 [debug] [ThreadPool]: On list_ufcstats: Close
+[0m16:03:13.739577 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ufcstats, now create_ufcstats_main_raw)
+[0m16:03:13.740577 [debug] [ThreadPool]: Creating schema "database: "ufcstats"
+schema: "main_raw"
+"
+[0m16:03:13.744577 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_raw"
+[0m16:03:13.745607 [debug] [ThreadPool]: On create_ufcstats_main_raw: BEGIN
+[0m16:03:13.745607 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:03:13.753607 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:03:13.754578 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_raw"
+[0m16:03:13.754578 [debug] [ThreadPool]: On create_ufcstats_main_raw: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "create_ufcstats_main_raw"} */
+create schema if not exists "ufcstats"."main_raw"
+[0m16:03:13.755608 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:03:13.756610 [debug] [ThreadPool]: On create_ufcstats_main_raw: COMMIT
+[0m16:03:13.756610 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_raw"
+[0m16:03:13.757607 [debug] [ThreadPool]: On create_ufcstats_main_raw: COMMIT
+[0m16:03:13.757607 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:03:13.757607 [debug] [ThreadPool]: On create_ufcstats_main_raw: Close
+[0m16:03:13.761608 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_ufcstats_main_raw, now create_ufcstats_main_silver)
+[0m16:03:13.761608 [debug] [ThreadPool]: Creating schema "database: "ufcstats"
+schema: "main_silver"
+"
+[0m16:03:13.763610 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_silver"
+[0m16:03:13.763610 [debug] [ThreadPool]: On create_ufcstats_main_silver: BEGIN
+[0m16:03:13.764607 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:03:13.772610 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:03:13.772610 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_silver"
+[0m16:03:13.773608 [debug] [ThreadPool]: On create_ufcstats_main_silver: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "create_ufcstats_main_silver"} */
+create schema if not exists "ufcstats"."main_silver"
+[0m16:03:13.773608 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:03:13.774607 [debug] [ThreadPool]: On create_ufcstats_main_silver: COMMIT
+[0m16:03:13.774607 [debug] [ThreadPool]: Using duckdb connection "create_ufcstats_main_silver"
+[0m16:03:13.775611 [debug] [ThreadPool]: On create_ufcstats_main_silver: COMMIT
+[0m16:03:13.775611 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:03:13.776613 [debug] [ThreadPool]: On create_ufcstats_main_silver: Close
+[0m16:03:13.779611 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ufcstats_main_raw'
+[0m16:03:13.784607 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_raw"
+[0m16:03:13.785607 [debug] [ThreadPool]: On list_ufcstats_main_raw: BEGIN
+[0m16:03:13.785607 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:03:13.793578 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:03:13.793578 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_raw"
+[0m16:03:13.794578 [debug] [ThreadPool]: On list_ufcstats_main_raw: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats_main_raw"} */
+select
+      'ufcstats' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_raw'
+    
+    and table_catalog = 'ufcstats'
+    
+  
+[0m16:03:13.809578 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:03:13.813578 [debug] [ThreadPool]: On list_ufcstats_main_raw: ROLLBACK
+[0m16:03:13.814578 [debug] [ThreadPool]: Failed to rollback 'list_ufcstats_main_raw'
+[0m16:03:13.815578 [debug] [ThreadPool]: On list_ufcstats_main_raw: Close
+[0m16:03:13.818607 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ufcstats_main_raw, now list_ufcstats_main_silver)
+[0m16:03:13.820611 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_silver"
+[0m16:03:13.820611 [debug] [ThreadPool]: On list_ufcstats_main_silver: BEGIN
+[0m16:03:13.821610 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:03:13.828578 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:03:13.829578 [debug] [ThreadPool]: Using duckdb connection "list_ufcstats_main_silver"
+[0m16:03:13.829578 [debug] [ThreadPool]: On list_ufcstats_main_silver: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "connection_name": "list_ufcstats_main_silver"} */
+select
+      'ufcstats' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_silver'
+    
+    and table_catalog = 'ufcstats'
+    
+  
+[0m16:03:13.845578 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m16:03:13.849578 [debug] [ThreadPool]: On list_ufcstats_main_silver: ROLLBACK
+[0m16:03:13.850578 [debug] [ThreadPool]: Failed to rollback 'list_ufcstats_main_silver'
+[0m16:03:13.850578 [debug] [ThreadPool]: On list_ufcstats_main_silver: Close
+[0m16:03:13.854587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4c36a94d-84d0-4cec-8884-447d62bde492', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F059BD10>]}
+[0m16:03:13.855558 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:03:13.855558 [debug] [MainThread]: On master: BEGIN
+[0m16:03:13.856558 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:03:13.864625 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m16:03:13.864625 [debug] [MainThread]: On master: COMMIT
+[0m16:03:13.865625 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:03:13.865625 [debug] [MainThread]: On master: COMMIT
+[0m16:03:13.866627 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m16:03:13.866627 [debug] [MainThread]: On master: Close
+[0m16:03:13.869626 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:03:13.869626 [info ] [MainThread]: 
+[0m16:03:13.874627 [debug] [Thread-1 (]: Began running node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m16:03:13.874627 [info ] [Thread-1 (]: 1 of 3 START sql table model main_raw.ct_raw_ufcstats_singlefights ............. [RUN]
+[0m16:03:13.875627 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.ufcstats.ct_raw_ufcstats_singlefights'
+[0m16:03:13.876632 [debug] [Thread-1 (]: Began compiling node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m16:03:13.878627 [debug] [Thread-1 (]: Writing injected SQL for node "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:03:13.879598 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_raw_ufcstats_singlefights (compile): 16:03:13.876632 => 16:03:13.878627
+[0m16:03:13.879598 [debug] [Thread-1 (]: Began executing node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m16:03:13.906600 [debug] [Thread-1 (]: Writing runtime sql for node "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:03:13.907600 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:03:13.908601 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: BEGIN
+[0m16:03:13.908601 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:03:13.916600 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:13.917600 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:03:13.917600 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+
+  
+    
+    
+
+    create  table
+      "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights__dbt_tmp"
+  
+    as (
+      WITH F1 AS (
+        SELECT
+            eventname,
+            eventdate,
+            eventlocation,
+            id,
+            weightclass,
+            method,
+            round,
+            time,
+            timeformat,
+            referee,
+            fighter1id fighterid,
+            fighter1 fightername,
+            fighter1nickname fighternickname,
+            fighter1kd fighterkd,
+            fighter1sigstr fightersigstr,
+            fighter1sigstrpct fightersigstrpct,
+            fighter1totalstr fightertotalstr,
+            fighter1td fightertd,
+            fighter1tdpct fightertdpct,
+            fighter1subatt fightersubatt,
+            fighter1rev fighterrev,
+            fighter1ctrl fighterctrl,
+            fighter1head fighterhead,
+            fighter1body fighterbody,
+            fighter1leg fighterleg,
+            fighter1distance fighterdistance,
+            fighter1clinch fighterclinch,
+            fighter1ground fighterground,
+            fighter2id opponentid,
+            winningfighter,
+            perf,
+            sub,
+            fight,
+            ko,
+            judge1,
+            judge1_score,
+            judge2,
+            judge2_score,
+            judge3,
+            judge3_score
+        FROM
+            raw.ufcstatsfighttable)
+    SELECT
+        eventname,
+        eventdate,
+        eventlocation,
+        id,
+        weightclass,
+        method,
+        round,
+        time,
+        timeformat,
+        referee,
+        fighter2id fighterid,
+        fighter2 fightername,
+        fighter2nickname fighternickname,
+        fighter2kd fighterkd,
+        fighter2sigstr fightersigstr,
+        fighter2sigstrpct fightersigstrpct,
+        fighter2totalstr fightertotalstr,
+        fighter2td fightertd,
+        fighter2tdpct fightertdpct,
+        fighter2subatt fightersubatt,
+        fighter2rev fighterrev,
+        fighter2ctrl fighterctrl,
+        fighter2head fighterhead,
+        fighter2body fighterbody,
+        fighter2leg fighterleg,
+        fighter2distance fighterdistance,
+        fighter2clinch fighterclinch,
+        fighter2ground fighterground,
+        fighter1id opponentid,
+        winningfighter,
+        perf,
+        sub,
+        fight,
+        ko,
+        judge1,
+        judge1_score,
+        judge2,
+        judge2_score,
+        judge3,
+        judge3_score
+    FROM
+        raw.ufcstatsfighttable
+    UNION ALL
+    SELECT * FROM F1
+    );
+  
+  
+[0m16:03:14.065598 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.070596 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:03:14.071597 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+alter table "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights" rename to "ct_raw_ufcstats_singlefights__dbt_backup"
+[0m16:03:14.071597 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.074597 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:03:14.074597 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+alter table "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights__dbt_tmp" rename to "ct_raw_ufcstats_singlefights"
+[0m16:03:14.075597 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.090599 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: COMMIT
+[0m16:03:14.091600 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:03:14.091600 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: COMMIT
+[0m16:03:14.231635 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.238614 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_raw_ufcstats_singlefights"
+[0m16:03:14.239615 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_raw_ufcstats_singlefights"} */
+drop table if exists "ufcstats"."main_raw"."ct_raw_ufcstats_singlefights__dbt_backup" cascade
+[0m16:03:14.262860 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.264799 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_raw_ufcstats_singlefights (execute): 16:03:13.879598 => 16:03:14.264799
+[0m16:03:14.265797 [debug] [Thread-1 (]: On model.ufcstats.ct_raw_ufcstats_singlefights: Close
+[0m16:03:14.381254 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4c36a94d-84d0-4cec-8884-447d62bde492', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F49BB810>]}
+[0m16:03:14.382232 [info ] [Thread-1 (]: 1 of 3 OK created sql table model main_raw.ct_raw_ufcstats_singlefights ........ [[32mOK[0m in 0.51s]
+[0m16:03:14.383205 [debug] [Thread-1 (]: Finished running node model.ufcstats.ct_raw_ufcstats_singlefights
+[0m16:03:14.384233 [debug] [Thread-1 (]: Began running node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m16:03:14.384233 [info ] [Thread-1 (]: 2 of 3 START sql table model main_silver.ct_rawtosilver_ufcstats_fighter ....... [RUN]
+[0m16:03:14.386228 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ufcstats.ct_raw_ufcstats_singlefights, now model.ufcstats.ct_rawtosilver_ufcstats_fighter)
+[0m16:03:14.386228 [debug] [Thread-1 (]: Began compiling node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m16:03:14.388206 [debug] [Thread-1 (]: Writing injected SQL for node "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:03:14.389206 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_rawtosilver_ufcstats_fighter (compile): 16:03:14.386228 => 16:03:14.389206
+[0m16:03:14.389206 [debug] [Thread-1 (]: Began executing node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m16:03:14.393203 [debug] [Thread-1 (]: Writing runtime sql for node "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:03:14.394203 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:03:14.395211 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: BEGIN
+[0m16:03:14.395211 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:03:14.403204 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.404204 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:03:14.404204 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+
+  
+    
+    
+
+    create  table
+      "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter__dbt_tmp"
+  
+    as (
+      WITH record_cte AS (
+            SELECT
+                STR_SPLIT(fighterurl, '/')[5] fighterid,
+                REGEXP_EXTRACT_ALL(record, '\d+') AS record_list
+            FROM
+                raw_ufcstatsfightertable
+        )
+
+
+        SELECT
+            STR_SPLIT(main.fighterurl, '/')[5] AS fighterid,
+            main.fightername,
+            main.fighternickname,
+            rec.record_list[1]::int AS wins,
+            rec.record_list[2]::int AS losses,
+            rec.record_list[3]::int AS draws,
+            IFNULL(rec.record_list[4]::int, 0) AS no_contests,
+            (rec.record_list[1]::int + rec.record_list[2]::int + IFNULL(rec.record_list[3], 0)::int + IFNULL(rec.record_list[4], 0)::int) AS totalfights,
+            CASE
+                WHEN CONTAINS(main.weight, '-') THEN NULL
+                ELSE REGEXP_EXTRACT(TRIM(main.weight), '\d+')::int
+            END AS weightlbs,
+            CASE
+                WHEN
+                    CONTAINS(main.height, '-') THEN NULL
+                ELSE
+                    (STR_SPLIT(main.height, ' ')[1]::int * 12 + STR_SPLIT(main.height, ' ')[2]::int)
+            END AS heightinches,
+            CASE
+                WHEN
+                    CONTAINS(main.reach, '-') THEN NULL
+                ELSE
+                    main.reach::int
+            END AS reach,
+            main.stance,
+            STRPTIME(
+                CASE
+                    WHEN CONTAINS(main.dob, '-') THEN NULL
+                ELSE
+                    main.dob
+                END,                    '%b %d, %Y') AS dob,
+            main.slpm::FLOAT AS slpm,
+            CONCAT('.', REGEXP_EXTRACT(main.stracc, '\d+'))::FLOAT AS  scraped_stracc,
+            main.sapm::FLOAT AS scraped_sapm,
+            CONCAT('.', REGEXP_EXTRACT(main.strdef, '\d+'))::FLOAT AS scraped_strdef,
+            main.tdavg::FLOAT AS scraped_tdavg,
+            CONCAT('.', REGEXP_EXTRACT(main.tdacc, '\d+'))::FLOAT AS scraped_tdacc,
+            CONCAT('.', REGEXP_EXTRACT(main.tddef, '\d+'))::FLOAT AS scraped_tddef,
+            main.subavg::FLOAT AS scraped_subavg
+        FROM
+            raw_ufcstatsfightertable main
+        INNER JOIN
+            record_cte rec ON rec.fighterid = STR_SPLIT(main.fighterurl, '/')[5]
+    );
+  
+  
+[0m16:03:14.419203 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.422204 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:03:14.423203 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+alter table "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter" rename to "ct_rawtosilver_ufcstats_fighter__dbt_backup"
+[0m16:03:14.423203 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.426204 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:03:14.426204 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+alter table "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter__dbt_tmp" rename to "ct_rawtosilver_ufcstats_fighter"
+[0m16:03:14.427203 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.429204 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: COMMIT
+[0m16:03:14.429204 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:03:14.430203 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: COMMIT
+[0m16:03:14.471140 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.475079 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_rawtosilver_ufcstats_fighter"
+[0m16:03:14.475079 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_rawtosilver_ufcstats_fighter"} */
+drop table if exists "ufcstats"."main_silver"."ct_rawtosilver_ufcstats_fighter__dbt_backup" cascade
+[0m16:03:14.499265 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.502223 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_rawtosilver_ufcstats_fighter (execute): 16:03:14.390205 => 16:03:14.501222
+[0m16:03:14.502223 [debug] [Thread-1 (]: On model.ufcstats.ct_rawtosilver_ufcstats_fighter: Close
+[0m16:03:14.617842 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4c36a94d-84d0-4cec-8884-447d62bde492', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F48A00D0>]}
+[0m16:03:14.618838 [info ] [Thread-1 (]: 2 of 3 OK created sql table model main_silver.ct_rawtosilver_ufcstats_fighter .. [[32mOK[0m in 0.23s]
+[0m16:03:14.619811 [debug] [Thread-1 (]: Finished running node model.ufcstats.ct_rawtosilver_ufcstats_fighter
+[0m16:03:14.620811 [debug] [Thread-1 (]: Began running node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m16:03:14.620811 [info ] [Thread-1 (]: 3 of 3 START sql table model main_silver.ct_silver_ufcstats_singlefights ....... [RUN]
+[0m16:03:14.622812 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ufcstats.ct_rawtosilver_ufcstats_fighter, now model.ufcstats.ct_silver_ufcstats_singlefights)
+[0m16:03:14.622812 [debug] [Thread-1 (]: Began compiling node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m16:03:14.624810 [debug] [Thread-1 (]: Writing injected SQL for node "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:03:14.625809 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_silver_ufcstats_singlefights (compile): 16:03:14.623812 => 16:03:14.625809
+[0m16:03:14.625809 [debug] [Thread-1 (]: Began executing node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m16:03:14.629809 [debug] [Thread-1 (]: Writing runtime sql for node "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:03:14.630810 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:03:14.630810 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: BEGIN
+[0m16:03:14.631809 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:03:14.639809 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.640809 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:03:14.641808 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+
+  
+    
+    
+
+    create  table
+      "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights__dbt_tmp"
+  
+    as (
+      WITH round_cte AS (
+        SELECT
+            id,
+            CASE
+                WHEN TIMEFORMAT == 'No Time Limit' THEN NULL
+                ELSE [val::int for val in STR_SPLIT(REPLACE(REPLACE(REGEXP_EXTRACT(timeformat, '\((.*)\)'), '(', ''),')',''), '-')]
+            END AS rnds
+        FROM
+            raw.ufcstats_singlefights
+    )
+
+    SELECT
+        eventname,
+        STRPTIME(eventdate, '%B %d, %Y') AS eventdate,
+        STR_SPLIT(eventlocation, ', ')[1] AS eventcity,
+        STR_SPLIT(eventlocation, ', ')[2] AS eventstate,
+        STR_SPLIT(eventlocation, ', ')[3] AS eventcountry,
+        id as fightid,
+        REPLACE(weightclass, ' Bout', '') weightclass,
+
+        CASE
+            WHEN
+                CONTAINS(weightclass, 'Title') THEN True::BOOLEAN
+            ELSE
+                False::BOOLEAN
+        END AS titlefight,
+        method,
+        round,
+        -- Total rounds in fight
+        LIST_COUNT(rcte.rnds) AS totalrounds,
+        LIST_SUM(rcte.rnds) * 60 AS totaltime,
+        CASE
+            WHEN round = 1 THEN str_split(time, ':')[1]::int * 60 + str_split(time, ':')[2]::int
+            ELSE LIST_SUM(rcte.rnds[1:round::int - 1]) * 60 + str_split(time, ':')[1]::int * 60 + str_split(time, ':')[2]::int
+        END AS time,
+        referee,
+        fightername,
+        fighterid,
+        opponentid,
+        fighternickname,
+        CASE
+            WHEN CONTAINS(fighterkd, '-') THEN NULL
+            ELSE fighterkd::int
+        END AS fighterkd,
+        CASE
+            WHEN CONTAINS(fightersigstr, '-') THEN NULL
+            ELSE STR_SPLIT(fightersigstr, ' of ')[1]::int
+        END AS fightersigstr,
+        CASE
+            WHEN CONTAINS(fightersigstr, '-') THEN NULL
+            ELSE STR_SPLIT(fightersigstr, ' of ')[2]::int
+        END AS fightersigstratt,
+        CASE
+            WHEN CONTAINS(fightersigstrpct, '-') OR fightersigstrpct == '' THEN NULL
+            ELSE REGEXP_EXTRACT(fightersigstrpct, '([0-9]+)')::int / 100
+        END AS fightersigstrpct,
+        CASE
+            WHEN CONTAINS(FIGHTERTOTALSTR, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTOTALSTR, ' of ')[1]::int
+        END AS fightertotalstr,
+        CASE
+            WHEN CONTAINS(FIGHTERTOTALSTR, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTOTALSTR, ' of ')[2]::int
+        END AS fightertotalstratt,
+        CASE
+            WHEN CONTAINS(FIGHTERTD, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTD, ' of ')[1]::int
+        END AS fightertd,
+        CASE
+            WHEN CONTAINS(FIGHTERTD, '-') THEN NULL
+            ELSE STR_SPLIT(FIGHTERTD, ' of ')[2]::int
+        END AS fightertdatt,
+        CASE
+            WHEN CONTAINS(fightertdpct, '-') OR fightertdpct == '' THEN NULL
+            ELSE REGEXP_EXTRACT(fightertdpct, '([0-9]+)')::int / 100
+        END AS fightertdpct,
+        CASE
+            WHEN CONTAINS(fightersubatt, '-') THEN NULL
+            ELSE fightersubatt::int
+        END AS fightersubatt,
+        CASE
+            WHEN CONTAINS(fighterrev, '-') THEN NULL
+            ELSE fighterrev::int
+        END AS fighterrev,
+        CASE
+            WHEN CONTAINS(fighterctrl, '-') THEN NULL
+            ELSE STR_SPLIT(fighterctrl, ':')[1]::int * 60 + STR_SPLIT(fighterctrl, ':')[2]::int
+        END AS fighterctrl,
+        CASE
+            WHEN CONTAINS(fighterhead, '-') THEN NULL
+            ELSE STR_SPLIT(fighterhead, ' of ')[1]::int
+        END AS fighterhead,
+        CASE
+            WHEN CONTAINS(fighterhead, '-') THEN NULL
+            ELSE STR_SPLIT(fighterhead, ' of ')[2]::int
+        END AS fighterheadatt,
+        CASE
+            WHEN CONTAINS(fighterbody, '-') THEN NULL
+            ELSE STR_SPLIT(fighterbody, ' of ')[1]::int
+        END AS fighterbody,
+        CASE
+            WHEN CONTAINS(fighterbody, '-') THEN NULL
+            ELSE STR_SPLIT(fighterbody, ' of ')[2]::int
+        END AS fighterbodyatt,
+        CASE
+            WHEN CONTAINS(fighterleg, '-') THEN NULL
+            ELSE STR_SPLIT(fighterleg, ' of ')[1]::int
+        END AS fighterleg,
+        CASE
+            WHEN CONTAINS(fighterleg, '-') THEN NULL
+            ELSE STR_SPLIT(fighterleg, ' of ')[2]::int
+        END AS fighterlegatt,
+        CASE
+            WHEN CONTAINS(fighterdistance, '-') THEN NULL
+            ELSE STR_SPLIT(fighterdistance, ' of ')[1]::int
+        END AS fighterdistance,
+        CASE
+            WHEN CONTAINS(fighterdistance, '-') THEN NULL
+            ELSE STR_SPLIT(fighterdistance, ' of ')[2]::int
+        END AS fighterdistanceatt,
+        CASE
+            WHEN CONTAINS(fighterclinch, '-') THEN NULL
+            ELSE STR_SPLIT(fighterclinch, ' of ')[1]::int
+        END AS fighterclinch,
+        CASE
+            WHEN CONTAINS(fighterclinch, '-') THEN NULL
+            ELSE STR_SPLIT(fighterclinch, ' of ')[2]::int
+        END AS fighterclinchatt,
+        CASE
+            WHEN CONTAINS(fighterground, '-') THEN NULL
+            ELSE STR_SPLIT(fighterground, ' of ')[1]::int
+        END AS fighterground,
+        CASE
+            WHEN CONTAINS(fighterground, '-') THEN NULL
+            ELSE STR_SPLIT(fighterground, ' of ')[2]::int
+        END AS fightergroundatt,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS winner,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] AND perf != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS performancebonus,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] AND sub != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS submissionbonus,
+        CASE
+            WHEN fighterid = STR_SPLIT(winningfighter, '/')[5] AND ko != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS knockoutbonus,
+        CASE
+            WHEN fight != '---' THEN True::BOOLEAN
+            ELSE False::BOOLEAN
+        END AS fightofthenight,
+        judge1,
+        CASE
+            WHEN judge1_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge1_score, ' - ')[1]::int
+        END AS judge1fighter1score,
+        CASE
+            WHEN judge1_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge1_score, ' - ')[2]::int
+        END AS judge1fighter2score,
+        judge2,
+        CASE
+            WHEN judge2_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge2_score, ' - ')[1]::int
+        END AS judge2fighter1score,
+        CASE
+            WHEN judge2_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge2_score, ' - ')[2]::int
+        END AS judge2fighter2score,
+        judge3,
+        CASE
+            WHEN judge3_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge3_score, ' - ')[1]::int
+        END AS judge3fighter1score,
+        CASE
+            WHEN judge3_score = '---' THEN NULL
+            ELSE STR_SPLIT(judge3_score, ' - ')[2]::int
+        END AS judge3fighter2score
+    FROM
+        raw.ufcstats_singlefights main
+    INNER JOIN round_cte rcte USING (id)
+    );
+  
+  
+[0m16:03:14.833844 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.835839 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:03:14.836838 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+alter table "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights" rename to "ct_silver_ufcstats_singlefights__dbt_backup"
+[0m16:03:14.836838 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.839840 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:03:14.839840 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+alter table "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights__dbt_tmp" rename to "ct_silver_ufcstats_singlefights"
+[0m16:03:14.840838 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:14.842838 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: COMMIT
+[0m16:03:14.842838 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:03:14.843839 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: COMMIT
+[0m16:03:15.030063 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:15.032069 [debug] [Thread-1 (]: Using duckdb connection "model.ufcstats.ct_silver_ufcstats_singlefights"
+[0m16:03:15.033068 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: /* {"app": "dbt", "dbt_version": "1.5.2", "profile_name": "ufcstats", "target_name": "dev", "node_id": "model.ufcstats.ct_silver_ufcstats_singlefights"} */
+drop table if exists "ufcstats"."main_silver"."ct_silver_ufcstats_singlefights__dbt_backup" cascade
+[0m16:03:15.054617 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m16:03:15.056461 [debug] [Thread-1 (]: Timing info for model.ufcstats.ct_silver_ufcstats_singlefights (execute): 16:03:14.626810 => 16:03:15.055428
+[0m16:03:15.056461 [debug] [Thread-1 (]: On model.ufcstats.ct_silver_ufcstats_singlefights: Close
+[0m16:03:15.299123 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4c36a94d-84d0-4cec-8884-447d62bde492', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F4B7BD90>]}
+[0m16:03:15.299123 [info ] [Thread-1 (]: 3 of 3 OK created sql table model main_silver.ct_silver_ufcstats_singlefights .. [[32mOK[0m in 0.68s]
+[0m16:03:15.300095 [debug] [Thread-1 (]: Finished running node model.ufcstats.ct_silver_ufcstats_singlefights
+[0m16:03:15.302109 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:03:15.302109 [debug] [MainThread]: On master: BEGIN
+[0m16:03:15.303094 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:03:15.312095 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m16:03:15.312095 [debug] [MainThread]: On master: COMMIT
+[0m16:03:15.313094 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:03:15.313094 [debug] [MainThread]: On master: COMMIT
+[0m16:03:15.314094 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m16:03:15.314094 [debug] [MainThread]: On master: Close
+[0m16:03:15.316615 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:03:15.317615 [debug] [MainThread]: Connection 'create_ufcstats_main_silver' was properly closed.
+[0m16:03:15.317615 [debug] [MainThread]: Connection 'list_ufcstats_main_silver' was properly closed.
+[0m16:03:15.318614 [debug] [MainThread]: Connection 'model.ufcstats.ct_silver_ufcstats_singlefights' was properly closed.
+[0m16:03:15.318614 [info ] [MainThread]: 
+[0m16:03:15.319645 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 1.62 seconds (1.62s).
+[0m16:03:15.320615 [debug] [MainThread]: Command end result
+[0m16:03:15.326615 [info ] [MainThread]: 
+[0m16:03:15.326615 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:03:15.327615 [info ] [MainThread]: 
+[0m16:03:15.328615 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m16:03:15.329615 [debug] [MainThread]: Command `dbt build` succeeded at 16:03:15.329615 after 2.30 seconds
+[0m16:03:15.330613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F1F91610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230EDEBD710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230F3F779D0>]}
+[0m16:03:15.330613 [debug] [MainThread]: Flushing usage events

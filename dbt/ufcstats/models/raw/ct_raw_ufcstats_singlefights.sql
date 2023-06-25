@@ -86,4 +86,4 @@
     FROM
         raw.ufcstatsfighttable
     UNION ALL
-    SELECT * FROM F1)
+    SELECT * FROM F1

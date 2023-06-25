@@ -1,6 +1,6 @@
-ufc_dbt:
+ufcstats:
   target: dev
   outputs:
     dev:
       type: duckdb
-      path: 'data/ufcstats.db'
+      path: './data/ufcstats.db'
