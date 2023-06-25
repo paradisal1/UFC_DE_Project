@@ -1,8 +1,8 @@
 /.venv
 /.scrapy
 */*.db
-*/__pycache__
-*/profiles.yml
+/__pycache__/
+
 .gitignore
 .vscode
 /package-lock.json
