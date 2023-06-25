@@ -1,4 +1,3 @@
-CREATE OR REPLACE table silver.ufcstatsfighter AS
         WITH record_cte AS (
             SELECT
                 STR_SPLIT(fighterurl, '/')[5] fighterid,

@@ -3,4 +3,4 @@ ufc_dbt:
   outputs:
     dev:
       type: duckdb
-      path: 'data/ufcstats.duckdb'
+      path: 'data/ufcstats.db'
